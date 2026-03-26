@@ -1,0 +1,96 @@
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio / Rider cache/options/directory
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.userprefs
+*.dotCover
+
+# ASP.NET Core / .NET
+*.dll
+*.exe
+*.pdb
+*.cache
+*.dbmdl
+*.dbproj.schemaview
+project.lock.json
+project.fragment.lock.json
+artifacts/
+*.nupkg
+*.snupkg
+
+# Angular
+node_modules/
+dist/
+.tmp/
+out-tsc/
+coverage/
+.angular/cache/
+*.ngfactory.ts
+*.ngsummary.json
+
+# Docker
+docker-compose.override.yml
+
+# Local dev uploads (imagens guardadas localmente em dev)
+fluxnote-backend/wwwroot/uploads/
+
+# Environment files
+*.env
+*.env.local
+*.env.*.local
+
+# Log files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Test results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+*.trx
+*.coverage
+*.coveragexml
+
+# NuGet
+*.nupkg
+*.snupkg
+**/packages/*
+!**/packages/build/
+*.nuget.props
+*.nuget.targets
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
