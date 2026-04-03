@@ -1,4 +1,3 @@
-
 USE HoneypotDW;
 GO
 
@@ -131,7 +130,6 @@ CREATE TABLE dbo.stg_honeypot (
     latitude                DECIMAL(9,6)    NULL,
     longitude               DECIMAL(9,6)    NULL,
     -- Checksum (um por dimensão que esta staging alimenta)
-    DW_row_checksum_date    VARCHAR(64)     NULL,
     DW_row_checksum_host    VARCHAR(64)     NULL,
     DW_row_checksum_geo     VARCHAR(64)     NULL,
     DW_row_checksum_proto   VARCHAR(64)     NULL,
@@ -179,8 +177,7 @@ CREATE TABLE dbo.DimDate (
     Hour                TINYINT         NOT NULL,
     Minute              TINYINT         NOT NULL,
     WeekDay             VARCHAR(15)     NOT NULL,
-    -- Checksum + Audit
-    DW_row_checksum     VARCHAR(64)     NULL,
+    -- Audit
     DW_run_id           VARCHAR(50)     NULL,
     DW_updated_on       DATETIME        NULL,
     DW_source_system    VARCHAR(100)    NULL,
@@ -293,12 +290,6 @@ BEGIN
 
     UPDATE t
     SET
-        t.DW_row_checksum_date = CONVERT(VARCHAR(64),
-            HASHBYTES('MD5', CONCAT(
-                ISNULL(CONVERT(VARCHAR(23), t.datetime, 121), ''),
-                ''
-            )), 2),
-
         t.DW_row_checksum_host = CONVERT(VARCHAR(64),
             HASHBYTES('MD5', CONCAT(
                 ISNULL(t.host, ''),
@@ -322,7 +313,7 @@ BEGIN
                 ''
             )), 2)
     FROM dbo.stg_honeypot t
-INNER JOIN inserted i ON t.stg_id = i.stg_id;
+    INNER JOIN inserted i ON t.stg_id = i.stg_id;
 END;
 GO
 
@@ -343,32 +334,13 @@ BEGIN
                 ISNULL(t.network, '')
             )), 2)
     FROM dbo.stg_geolite t
-INNER JOIN inserted i ON t.stg_id = i.stg_id;
+    INNER JOIN inserted i ON t.stg_id = i.stg_id;
 END;
 GO
 
 
 
 -- TRIGGERS DE CHECKSUM NAS DIMENSÕES
-
-
-CREATE TRIGGER dbo.trg_Insert_DimDate_Checksum
-ON dbo.DimDate
-AFTER INSERT
-AS
-BEGIN
-    SET NOCOUNT ON;
-
-    UPDATE t
-    SET t.DW_row_checksum = CONVERT(VARCHAR(64),
-        HASHBYTES('MD5', CONCAT(
-            ISNULL(CONVERT(VARCHAR(23), t.FullDate, 121), ''),
-                ''
-            )), 2)
-    FROM dbo.DimDate t
-    INNER JOIN inserted i ON t.DateID = i.DateID;
-END;
-GO
 
 
 CREATE TRIGGER dbo.trg_Insert_DimHost_Checksum

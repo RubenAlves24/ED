@@ -11,8 +11,8 @@
   DTS:LocaleID="2070"
   DTS:ObjectName="ETL"
   DTS:PackageType="5"
-  DTS:VersionBuild="161"
-  DTS:VersionGUID="{EA7F8E68-7C9D-4C7D-A2DB-567E806138BD}">
+  DTS:VersionBuild="168"
+  DTS:VersionGUID="{F5225CB1-F9FB-4EFD-BE5C-F47FE15267D7}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -25,7 +25,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=HoneypotDW;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-ETL-{E263DB70-F6A4-4BB5-BF87-A86BC3BE1E1A}(LocalDB)\MSSQLLocalDB.HoneypotDW;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=HoneypotDW;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-ETL-{E263DB70-F6A4-4BB5-BF87-A86BC3BE1E1A}(LocalDB)\MSSQLLocalDB.HoneypotDW;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -41,7 +41,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\guesi.DESKTOP-4N7APLK\OneDrive\Documents\engenharia de dados\projeto\dados\ErrorImportGeolite.txt">
+          DTS:ConnectionString="C:\Users\tride\Documents\Escola\3ºANo\ED\dados\ErrorImportGeolite.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -50,7 +50,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="network"
-              DTS:DTSID="{E9EDEA2D-D7E4-4F24-ABEB-0B9BA32A1B9B}"
+              DTS:DTSID="{3EF0C813-A48A-4572-AF0B-15B9E1DC1D21}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -59,7 +59,7 @@
               DTS:DataPrecision="18"
               DTS:TextQualified="True"
               DTS:ObjectName="autonomous_system_number"
-              DTS:DTSID="{0B962AD7-CB13-4526-BC80-CFAFD8DD3497}"
+              DTS:DTSID="{A9E3FCAA-0A5C-4E9D-B9CE-8C86B051BBFE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -68,7 +68,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="autonomous_system_organization"
-              DTS:DTSID="{7CCBC0DB-D773-49A8-AA1F-CDF88EAAC2D5}"
+              DTS:DTSID="{C46F8331-F892-4738-9AE0-A3C18C0D90F9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -77,7 +77,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="RunId"
-              DTS:DTSID="{A4E14CFC-5BC6-4FED-9398-BDCF7535D0B9}"
+              DTS:DTSID="{EA14E8BC-AD6F-4A1F-8620-5DA37DA4D218}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -85,7 +85,7 @@
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="UpdatedOn"
-              DTS:DTSID="{0E822961-6396-4F74-A731-4BFB883A09E5}"
+              DTS:DTSID="{85182394-B740-4CC3-A128-1673A3976C03}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -94,7 +94,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="SourceSystem"
-              DTS:DTSID="{0DB348B4-012B-4EDA-AACF-F8D3D81A59F8}"
+              DTS:DTSID="{DFD963DD-E856-4B22-8E03-AA3939450700}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -113,7 +113,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\guesi.DESKTOP-4N7APLK\OneDrive\Documents\engenharia de dados\projeto\dados\ErrorImportHoneypot.txt">
+          DTS:ConnectionString="C:\Users\tride\Documents\Escola\3ºANo\ED\dados\ErrorImportHoneypot.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -121,7 +121,7 @@
               DTS:DataType="7"
               DTS:TextQualified="True"
               DTS:ObjectName="datetime"
-              DTS:DTSID="{95B0F246-F95C-4A5E-AED0-D7E655CAEB8F}"
+              DTS:DTSID="{B049D364-F356-4385-A1FC-A9A293C197D6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -130,7 +130,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="host"
-              DTS:DTSID="{01264949-CDEF-4B87-9779-2656E17F3700}"
+              DTS:DTSID="{DB5039A8-9041-4EE5-850A-D56547A301D7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -139,7 +139,7 @@
               DTS:DataPrecision="18"
               DTS:TextQualified="True"
               DTS:ObjectName="src"
-              DTS:DTSID="{38F21AE9-4B19-4659-9FEA-F3FF4AA79D7D}"
+              DTS:DTSID="{2E5328E4-493C-4DAC-9A1A-4F36FDC86132}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -148,7 +148,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="proto"
-              DTS:DTSID="{4FF82244-1738-46E6-8539-0F48F2BC0E07}"
+              DTS:DTSID="{99EAF1C3-28E7-47DB-B209-A26DC0630532}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -157,7 +157,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="type"
-              DTS:DTSID="{CAD1C5D7-B95E-4F36-911C-C388458E0799}"
+              DTS:DTSID="{6B0DF1ED-241A-47D5-8E58-4173279251AE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -166,7 +166,7 @@
               DTS:DataPrecision="18"
               DTS:TextQualified="True"
               DTS:ObjectName="spt"
-              DTS:DTSID="{35BE251A-3DF4-4022-87ED-4D293F8E11AC}"
+              DTS:DTSID="{DAB7A384-27F9-4B86-B169-6F31329B0D0B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -175,7 +175,7 @@
               DTS:DataPrecision="18"
               DTS:TextQualified="True"
               DTS:ObjectName="dpt"
-              DTS:DTSID="{34F7F213-C82E-48EA-838E-74E34994092C}"
+              DTS:DTSID="{D9A1D54C-534C-47EE-A775-94780341A15B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -184,7 +184,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="srcstr"
-              DTS:DTSID="{6855A999-6CA8-4A5E-993A-E5B202E5A343}"
+              DTS:DTSID="{9E0C3F7C-4EFE-4CEA-895C-7D6C10060A0C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -193,7 +193,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="cc"
-              DTS:DTSID="{0BE9CAD9-76AC-4E10-9A47-850422755FDC}"
+              DTS:DTSID="{D3E010D5-BD7F-44BA-97E4-DF868E3B5B51}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -202,7 +202,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="country"
-              DTS:DTSID="{8CF93414-1B02-4180-B847-60EFFD085485}"
+              DTS:DTSID="{A4F2E095-A9A1-455F-A0C1-51616485791F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -211,7 +211,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="locale"
-              DTS:DTSID="{562ED0D7-8FA8-454F-ABBE-36DF0FF71487}"
+              DTS:DTSID="{BEDDFD3E-B965-4CF3-B05E-A8FF7D01F9E5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -220,7 +220,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="localeabbr"
-              DTS:DTSID="{85166851-CFF0-45BE-9B43-B4F4A0122D95}"
+              DTS:DTSID="{C6553285-BCA7-42F5-B19B-0ABEFFDD4A86}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -229,7 +229,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="postalcode"
-              DTS:DTSID="{A0A0C2C0-323C-4BC3-A89E-623D4C134BAF}"
+              DTS:DTSID="{5EAB1AEC-220B-432E-8E01-8DAEBD3522A1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -239,7 +239,7 @@
               DTS:DataScale="6"
               DTS:TextQualified="True"
               DTS:ObjectName="latitude"
-              DTS:DTSID="{6C953633-34BE-4E93-A8A8-0A7346ACAF92}"
+              DTS:DTSID="{8E4DAF50-8254-4F07-AF20-4721AB7B71B1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -249,7 +249,7 @@
               DTS:DataScale="6"
               DTS:TextQualified="True"
               DTS:ObjectName="longitude"
-              DTS:DTSID="{6832CCCC-CFB4-4C16-B3D0-E515D5F56953}"
+              DTS:DTSID="{7906D354-6C2B-4B4F-9CC0-18EE35E5BFD0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -258,7 +258,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 0"
-              DTS:DTSID="{7217BA3F-A797-4D71-8EFC-CDDD99EDE458}"
+              DTS:DTSID="{DC9CAC3F-488D-459B-8BEC-1DC145C5CD01}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -267,7 +267,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="RunId"
-              DTS:DTSID="{4AFCE351-88C5-4D75-B8C7-6A49B4714777}"
+              DTS:DTSID="{9D41696D-5375-4290-9AA8-BB633DD0032C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -275,7 +275,7 @@
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="UpdatedOn"
-              DTS:DTSID="{EB124B61-C320-4276-83CA-20B2DB81DFBA}"
+              DTS:DTSID="{45BE9A10-5566-4E16-90D5-1BD47E009F40}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -284,7 +284,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="SourceSystem"
-              DTS:DTSID="{8E742972-D5DF-4D56-BC91-0BCA19A29FE6}"
+              DTS:DTSID="{FC397585-78BC-47F4-8D33-7240C82361BC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -292,7 +292,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorCode"
-              DTS:DTSID="{6BF0835A-8F1E-45ED-9AC1-2E9C835EC010}"
+              DTS:DTSID="{CB85BFBC-72D1-448B-879E-7D68C5752014}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -300,7 +300,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorColumn"
-              DTS:DTSID="{9E2AAC57-FF07-4793-96D0-AE9A378B7078}"
+              DTS:DTSID="{C34BA962-00B7-44F7-954E-84F1E243AC0F}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -319,7 +319,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\guesi.DESKTOP-4N7APLK\OneDrive\Documents\engenharia de dados\projeto\dados\ErrorPopulateFactTable.txt">
+          DTS:ConnectionString="C:\Users\tride\Documents\Escola\3ºANo\ED\dados\ErrorPopulateFactTable.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -327,7 +327,7 @@
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="datetime"
-              DTS:DTSID="{7E0E9F26-F726-45B3-907D-0F07C8F4FBB5}"
+              DTS:DTSID="{5EDDA67D-68D5-48F1-818C-654ADF9F4F57}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -336,7 +336,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="host"
-              DTS:DTSID="{6F67943D-4609-4282-858B-CE1A155DF6CC}"
+              DTS:DTSID="{50167EEE-9CE8-4016-8C46-32B7871B5AAD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -344,7 +344,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="src"
-              DTS:DTSID="{C0630BD0-C85A-4122-AC47-B53E233CCF02}"
+              DTS:DTSID="{347CA585-8019-4356-9DC6-3275CAED485C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -353,7 +353,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="srcstr"
-              DTS:DTSID="{F464F0DB-9B97-4D96-A945-FAA43EBC8F01}"
+              DTS:DTSID="{D938BAD7-C993-4F42-9453-0945FF23F87E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -361,7 +361,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="spt"
-              DTS:DTSID="{EB1F23F0-C1C7-4A11-8DDD-CE67A53880E0}"
+              DTS:DTSID="{4853D2E0-EF21-46A3-873A-BC1841738A2B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -369,7 +369,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="dpt"
-              DTS:DTSID="{1E5DA1DC-4D50-4627-8061-7F6CF1D2218E}"
+              DTS:DTSID="{D13EA726-E614-496D-90DD-58B363579A6A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -378,7 +378,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="proto"
-              DTS:DTSID="{A65E31B8-BBC8-4FA3-AEEF-A6CA100C959B}"
+              DTS:DTSID="{F8AF032D-A83E-419E-8552-2F375FB33ED1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -387,7 +387,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="cc"
-              DTS:DTSID="{C4B03137-3C7F-4995-A880-911CA894B9DE}"
+              DTS:DTSID="{F3AB9EC0-4AE1-4EFF-8B94-83B747F389A3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -396,7 +396,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="locale"
-              DTS:DTSID="{641C2CE2-DB24-479F-9B24-B83B620408C5}"
+              DTS:DTSID="{2C293C7C-A375-47F0-9AB6-87AE81D1E89F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -405,7 +405,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="postalcode"
-              DTS:DTSID="{A1CEF580-A321-4FC6-8487-D6E3F09EAE36}"
+              DTS:DTSID="{E04F958C-7F65-4126-AD46-8A7C4D0D2D90}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -414,7 +414,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="DW_run_id"
-              DTS:DTSID="{9AD41900-CA00-4A3A-B582-7A2AC919D7B4}"
+              DTS:DTSID="{A1B0AA1B-3D52-413F-A303-46F4A7AA462C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -422,7 +422,7 @@
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="DW_updated_on"
-              DTS:DTSID="{4DCA3F78-C8B8-4A19-9B9C-1E4349C1077A}"
+              DTS:DTSID="{B603BC80-6242-4B0B-9BC3-B72192D30F57}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -431,7 +431,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="DW_source_system"
-              DTS:DTSID="{D2E2FB67-EF53-4BCC-89C9-C2F4EF9F8C4F}"
+              DTS:DTSID="{F977AF98-CA77-405F-BA22-E0CABF35526E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -439,7 +439,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorCode"
-              DTS:DTSID="{6B1774BA-CE6C-4C7C-8918-534268639C4B}"
+              DTS:DTSID="{E5B9A116-D18A-4958-92C0-C87551EFBBDF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -447,7 +447,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorColumn"
-              DTS:DTSID="{5F43CA2D-6D69-4BE4-B0F8-E45743B55C2A}"
+              DTS:DTSID="{0469651D-3167-4A8B-AA7F-DA35CEA5C564}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -467,7 +467,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\guesi.DESKTOP-4N7APLK\OneDrive\Documents\engenharia de dados\projeto\dados\GeoLite2-ASN-Blocks-IPv4.csv">
+          DTS:ConnectionString="C:\Users\tride\Documents\Escola\3ºANo\ED\dados\GeoLite2-ASN-Blocks-IPv4.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -476,7 +476,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="network"
-              DTS:DTSID="{2FD1E415-AEDB-4AD8-B0ED-5C4C25BD5BE1}"
+              DTS:DTSID="{346AE448-FCD4-4B24-B7F4-D76BDB95C018}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -485,7 +485,7 @@
               DTS:DataPrecision="18"
               DTS:TextQualified="True"
               DTS:ObjectName="autonomous_system_number"
-              DTS:DTSID="{1B5EE0DF-D2D0-4811-935D-C2496AEE8E8A}"
+              DTS:DTSID="{AC4E19CC-C574-4892-8360-1DC5CB1B52C1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -494,7 +494,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="autonomous_system_organization"
-              DTS:DTSID="{0BE4E2D2-45DF-4C5A-BE64-C36EE0610BA2}"
+              DTS:DTSID="{D8E98CAD-A882-4D58-809D-024A4C3B3B37}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -514,7 +514,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\guesi.DESKTOP-4N7APLK\OneDrive\Documents\engenharia de dados\projeto\dados\AWS_Honeypot_marx-geo_10k.csv">
+          DTS:ConnectionString="C:\Users\tride\Documents\Escola\3ºANo\ED\dados\AWS_Honeypot_marx-geo_10k.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -522,7 +522,7 @@
               DTS:DataType="7"
               DTS:TextQualified="True"
               DTS:ObjectName="datetime"
-              DTS:DTSID="{E08198BC-96D1-4BCF-88D1-15FA9290DA8E}"
+              DTS:DTSID="{BD8C2EF2-A8B9-4E25-8BD3-23F081EFF910}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -531,7 +531,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="host"
-              DTS:DTSID="{5A29E99F-C615-4B16-ADA6-169B32EA83AA}"
+              DTS:DTSID="{A7C3B793-7F34-4B68-9D77-5090C9EADF1A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -540,7 +540,7 @@
               DTS:DataPrecision="18"
               DTS:TextQualified="True"
               DTS:ObjectName="src"
-              DTS:DTSID="{B131A608-A5C4-48D7-82CF-E6D10373E696}"
+              DTS:DTSID="{B5A4C200-7F09-40C2-9C05-3323434E8F2E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -549,7 +549,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="proto"
-              DTS:DTSID="{0E646E4E-EB52-4B22-99E9-EE964EC85580}"
+              DTS:DTSID="{18240939-BE54-41C6-9A64-B2299CCF29EA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -558,7 +558,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="type"
-              DTS:DTSID="{26BC867C-3A98-4E33-8E55-587BA4941A1C}"
+              DTS:DTSID="{784D5423-5E67-4D8C-A27D-111200A37A9C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -567,7 +567,7 @@
               DTS:DataPrecision="18"
               DTS:TextQualified="True"
               DTS:ObjectName="spt"
-              DTS:DTSID="{577DA6E7-206F-4711-A38E-B31BFF92B8A1}"
+              DTS:DTSID="{5F182575-4BF6-47BA-B517-741913B8D4FF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -576,7 +576,7 @@
               DTS:DataPrecision="18"
               DTS:TextQualified="True"
               DTS:ObjectName="dpt"
-              DTS:DTSID="{CBA100B7-3FB2-4FA8-8BDA-05F8D689B7FD}"
+              DTS:DTSID="{D36FB21F-3718-4757-B299-D727C9B2C875}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -585,7 +585,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="srcstr"
-              DTS:DTSID="{C6834DC5-7332-4495-9D4E-A1CBE93010D3}"
+              DTS:DTSID="{11AB51A9-D424-49F3-A1B7-0E8C7D6EDE92}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -594,7 +594,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="cc"
-              DTS:DTSID="{E194860B-E379-4A67-A320-7A6FD8ED05B6}"
+              DTS:DTSID="{85773BAB-8BC5-46D9-BFD5-34092850B516}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -603,7 +603,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="country"
-              DTS:DTSID="{43261DBA-5EAA-4E7D-8A9D-D34649244CA3}"
+              DTS:DTSID="{F8C0AE19-BD62-4E49-90AB-303FACE81357}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -612,7 +612,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="locale"
-              DTS:DTSID="{9DD62F96-A411-4640-A1D6-8FE206CF2A4D}"
+              DTS:DTSID="{1FC72DD6-52FC-4E31-BCCA-ED64BD882C96}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -621,7 +621,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="localeabbr"
-              DTS:DTSID="{EB559E01-65AF-4D5E-8782-5149BB98762A}"
+              DTS:DTSID="{DB14258D-60C0-4338-9423-470B0EDFCA4F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -630,7 +630,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="postalcode"
-              DTS:DTSID="{87B7EEB1-E5F6-4B22-B9F7-DCE3D14E7F9D}"
+              DTS:DTSID="{BB46FF8F-E989-41FD-94A0-71C29C98E4D9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -640,7 +640,7 @@
               DTS:DataScale="6"
               DTS:TextQualified="True"
               DTS:ObjectName="latitude"
-              DTS:DTSID="{DDE2A583-3ABD-43CA-A0B3-257410871C1C}"
+              DTS:DTSID="{EE8482E7-744E-42AE-89D8-60CB17CAC9A3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -650,7 +650,7 @@
               DTS:DataScale="6"
               DTS:TextQualified="True"
               DTS:ObjectName="longitude"
-              DTS:DTSID="{409463EC-4183-41A6-9D5C-4C61D14EB61C}"
+              DTS:DTSID="{06B632CE-EC85-42CC-A7CF-146514780D89}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -658,7 +658,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 0"
-              DTS:DTSID="{477343E0-3881-495A-9D0F-C8EAEDFD1FFB}"
+              DTS:DTSID="{0BB8EB82-7E9E-45D2-9EBC-9B41C3219B7B}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -678,7 +678,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\guesi.DESKTOP-4N7APLK\OneDrive\Documents\engenharia de dados\projeto\dados\AWS_Honeypot_marx-geo.csv">
+          DTS:ConnectionString="C:\Users\tride\Documents\Escola\3ºANo\ED\dados\AWS_Honeypot_marx-geo.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -686,7 +686,7 @@
               DTS:DataType="7"
               DTS:TextQualified="True"
               DTS:ObjectName="datetime"
-              DTS:DTSID="{107A4472-8B27-4D5A-8F4C-EA0AF37C7B24}"
+              DTS:DTSID="{28EE2475-8627-48A1-955D-8A53E76A483F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -695,7 +695,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="host"
-              DTS:DTSID="{9FF5F6A0-2F59-41E5-A966-90BA4ECACCE2}"
+              DTS:DTSID="{3F984D9C-53F1-49F6-8957-C15612551D1D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -704,7 +704,7 @@
               DTS:DataPrecision="18"
               DTS:TextQualified="True"
               DTS:ObjectName="src"
-              DTS:DTSID="{F6D92433-BA5D-473D-B571-18EDA2D89B1A}"
+              DTS:DTSID="{758B9B7E-1580-4695-BFCB-79CEEF04B799}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -713,7 +713,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="proto"
-              DTS:DTSID="{7752FCFB-9ACB-4800-B9CF-C661336CFAF1}"
+              DTS:DTSID="{49A45C02-EB13-404A-B71F-B0B5BE095D60}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -722,7 +722,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="type"
-              DTS:DTSID="{FFCC5426-6194-48FD-9505-0051AA64146D}"
+              DTS:DTSID="{75E8BE1E-7EB0-4719-A7F6-C610CE2E95B9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -731,7 +731,7 @@
               DTS:DataPrecision="18"
               DTS:TextQualified="True"
               DTS:ObjectName="spt"
-              DTS:DTSID="{86866F61-E27E-416E-9A89-27E9FDFA0B68}"
+              DTS:DTSID="{305BDFAE-6BFD-42F6-B192-AA39291CFCE5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -740,7 +740,7 @@
               DTS:DataPrecision="18"
               DTS:TextQualified="True"
               DTS:ObjectName="dpt"
-              DTS:DTSID="{AD65472B-E439-406E-8AC5-2AA4D9ACD29B}"
+              DTS:DTSID="{60C8F390-991B-435E-98E4-CBDAEF05C178}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -749,7 +749,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="srcstr"
-              DTS:DTSID="{EEE3FCA9-8687-4316-9CF3-619629DC96D1}"
+              DTS:DTSID="{65D6F5D0-55E6-495A-9EE9-1C7E7168376A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -758,7 +758,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="cc"
-              DTS:DTSID="{AA3BF9BA-2AD2-4E3C-9497-6ADE480DD2BC}"
+              DTS:DTSID="{A3F3E1BF-85F9-46D9-9D1F-806C8CFBA378}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -767,7 +767,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="country"
-              DTS:DTSID="{21DCBAAF-3DBB-40C9-8015-6BF9C8457013}"
+              DTS:DTSID="{CB991430-92FE-4200-809B-7FB2AEADB596}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -776,7 +776,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="locale"
-              DTS:DTSID="{D28ED52F-5CAA-4B63-8B8A-7B8CE8E047E5}"
+              DTS:DTSID="{1817D833-3AE8-4B99-9BF1-2D2CDFD2EBB8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -785,7 +785,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="localeabbr"
-              DTS:DTSID="{785CD945-AA37-4E26-A59E-95757C9656B4}"
+              DTS:DTSID="{DE7650BA-7E2C-4B7D-A57F-44F8E1A4A6E3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -794,7 +794,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="postalcode"
-              DTS:DTSID="{899C2520-5B34-460B-B81F-108385E086AA}"
+              DTS:DTSID="{AC8A224F-DC03-481B-A9F0-47F8D17480AF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -804,7 +804,7 @@
               DTS:DataScale="6"
               DTS:TextQualified="True"
               DTS:ObjectName="latitude"
-              DTS:DTSID="{2D5ECEBD-7B6E-4D20-AC49-A2EA7805AE7B}"
+              DTS:DTSID="{0E1D4F4B-6FD0-442D-87EC-4A82787A780B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -814,7 +814,7 @@
               DTS:DataScale="6"
               DTS:TextQualified="True"
               DTS:ObjectName="longitude"
-              DTS:DTSID="{8431E30A-80B4-4C9A-AC9D-E50CA91A39E1}"
+              DTS:DTSID="{2662517D-B308-4147-ABD5-C672B34DBF7D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -822,7 +822,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 0"
-              DTS:DTSID="{1AEB490B-2918-4911-9DB5-C678AC9B2BDE}"
+              DTS:DTSID="{1406E361-8F7D-4221-A63F-2CFAA2BAEAB7}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -837,7 +837,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=HoneypotDW;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package-{06C4C3A1-F613-4FED-924B-A97AF1B855FC}localhost.HoneypotDW;" />
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=HoneypotDW;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package-{06C4C3A1-F613-4FED-924B-A97AF1B855FC}localhost.HoneypotDW;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -1029,14 +1029,35 @@
           Language="CSharp"
           ReadOnlyVariables="User::RunId">
           <ProjectItem
-            Name="Properties\Settings.settings"
-            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
+            Name="Properties\AssemblyInfo.cs"
+            Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_9059fd0cbd224482a143d668cf7a247b")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_9059fd0cbd224482a143d668cf7a247b")]
+[assembly: AssemblyCopyright("Copyright @  2026")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.resx"
             Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -1405,35 +1426,14 @@ namespace ST_9059fd0cbd224482a143d668cf7a247b.Properties {
     }
 }]]></ProjectItem>
           <ProjectItem
-            Name="Properties\AssemblyInfo.cs"
-            Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_9059fd0cbd224482a143d668cf7a247b")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_9059fd0cbd224482a143d668cf7a247b")]
-[assembly: AssemblyCopyright("Copyright @  2026")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+            Name="Properties\Settings.settings"
+            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.Designer.cs"
             Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -4340,12 +4340,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
                       precision="9"
                       scale="6" />
                     <externalMetadataColumn
-                      refId="Package\Import Honeypot Attack Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DW_row_checksum_date]"
-                      codePage="1252"
-                      dataType="str"
-                      length="64"
-                      name="DW_row_checksum_date" />
-                    <externalMetadataColumn
                       refId="Package\Import Honeypot Attack Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DW_row_checksum_host]"
                       codePage="1252"
                       dataType="str"
@@ -5439,7 +5433,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       DTS:LocaleID="-1"
       DTS:ObjectName="Merge DimASN"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="4">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -5469,12 +5463,12 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       DTS:LocaleID="-1"
       DTS:ObjectName="Merge DimDate"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{06C4C3A1-F613-4FED-924B-A97AF1B855FC}"
-          SQLTask:SqlStatementSource="MERGE dbo.DimDate AS target&#xA;USING (&#xA;    SELECT DISTINCT&#xA;        datetime                        AS FullDate,&#xA;        YEAR(datetime)                  AS [Year],&#xA;        MONTH(datetime)                 AS [Month],&#xA;        DAY(datetime)                   AS [Day],&#xA;        DATEPART(HOUR, datetime)        AS [Hour],&#xA;        DATEPART(MINUTE, datetime)      AS [Minute],&#xA;        DATENAME(WEEKDAY, datetime)     AS [WeekDay],&#xA;        DW_row_checksum_date AS src_checksum&#xA;    FROM dbo.stg_honeypot&#xA;    WHERE datetime IS NOT NULL&#xA;) AS source&#xA;ON target.FullDate = source.FullDate&#xA;WHEN NOT MATCHED THEN&#xA;    INSERT (FullDate, [Year], [Month], [Day], [Hour], [Minute], [WeekDay],&#xA;            DW_row_checksum, DW_run_id, DW_updated_on, DW_source_system)&#xA;    VALUES (source.FullDate, source.[Year], source.[Month], source.[Day],&#xA;            source.[Hour], source.[Minute], source.[WeekDay],&#xA;            source.src_checksum, ?, GETDATE(), 'Honeypot Logs');" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          SQLTask:SqlStatementSource="MERGE dbo.DimDate AS target&#xA;USING (&#xA;    SELECT DISTINCT&#xA;        datetime                        AS FullDate,&#xA;        YEAR(datetime)                  AS [Year],&#xA;        MONTH(datetime)                 AS [Month],&#xA;        DAY(datetime)                   AS [Day],&#xA;        DATEPART(HOUR, datetime)        AS [Hour],&#xA;        DATEPART(MINUTE, datetime)      AS [Minute],&#xA;        DATENAME(WEEKDAY, datetime)     AS [WeekDay]&#xA;    FROM dbo.stg_honeypot&#xA;    WHERE datetime IS NOT NULL&#xA;) AS source&#xA;ON target.FullDate = source.FullDate&#xA;WHEN NOT MATCHED THEN&#xA;    INSERT (FullDate, [Year], [Month], [Day], [Hour], [Minute], [WeekDay],&#xA;            DW_run_id, DW_updated_on, DW_source_system)&#xA;    VALUES (source.FullDate, source.[Year], source.[Month], source.[Day],&#xA;            source.[Hour], source.[Minute], source.[WeekDay],&#xA;            ?, GETDATE(), 'Honeypot Logs');" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ParameterBinding
             SQLTask:ParameterName="0"
             SQLTask:DtsVariableName="User::RunId"
@@ -5493,7 +5487,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       DTS:LocaleID="-1"
       DTS:ObjectName="Merge DimGeoOrigin"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="2">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -5523,7 +5517,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       DTS:LocaleID="-1"
       DTS:ObjectName="Merge DimHost"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="4">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -8893,79 +8887,79 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
       <GraphLayout
         Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="187,43"
+          Size="186.666666666667,42.6666666666667"
           Id="Package\Add Failed Row Count"
           TopLeft="462.347317575137,1037.95307014116" />
         <NodeLayout
-          Size="197,43"
+          Size="197.333333333334,42.6666666666667"
           Id="Package\Add Success Row Count"
           TopLeft="455.941067861518,970.347806956968" />
         <NodeLayout
-          Size="177,43"
+          Size="177.333333333334,42.6666666666667"
           Id="Package\Calculate IP Ranges"
           TopLeft="452.805538264,448.05395539129" />
         <NodeLayout
-          Size="179,42"
+          Size="178.666666666667,42"
           Id="Package\Finish Audit Process"
           TopLeft="463.284817533227,1112.33026310483" />
         <NodeLayout
-          Size="159,43"
+          Size="158.666666666667,42.6666666666667"
           Id="Package\Generate Run Id"
           TopLeft="433.305544410729,9.684210090591" />
         <NodeLayout
-          Size="197,43"
+          Size="197.333333333334,42.6666666666667"
           Id="Package\Import Geolite ASN Data"
           TopLeft="734.430530859986,335.929821879442" />
         <NodeLayout
-          Size="216,43"
+          Size="216,42.6666666666667"
           Id="Package\Import Honeypot Attack Data"
           TopLeft="403.930544159272,336.473680439253" />
         <NodeLayout
-          Size="147,43"
+          Size="146.666666666667,42.6666666666667"
           Id="Package\Insert Indexes"
           TopLeft="461.836787502645,544.907888995417" />
         <NodeLayout
-          Size="153,43"
+          Size="153.333333333334,42.6666666666667"
           Id="Package\Merge DimASN"
           TopLeft="880.209784672929,662.571784518209" />
         <NodeLayout
-          Size="155,43"
+          Size="154.666666666667,42.6666666666667"
           Id="Package\Merge DimDate"
           TopLeft="482.99998100102,661.84843663785" />
         <NodeLayout
-          Size="180,43"
+          Size="180,42.6666666666667"
           Id="Package\Merge DimGeoOrigin"
           TopLeft="663.456322140342,658.264476777452" />
         <NodeLayout
-          Size="153,43"
+          Size="153.333333333334,42.6666666666667"
           Id="Package\Merge DimHost"
           TopLeft="294.805544969523,657.828455481405" />
         <NodeLayout
-          Size="171,43"
+          Size="170.666666666667,42.6666666666667"
           Id="Package\Merge DimProtocol"
           TopLeft="101.055553630822,656.366467803353" />
         <NodeLayout
-          Size="175,43"
+          Size="174.666666666667,42.6666666666667"
           Id="Package\Populate Fact Table"
           TopLeft="463.190572064488,872.723676406921" />
         <NodeLayout
-          Size="203,43"
+          Size="202.666666666667,42.6666666666667"
           Id="Package\Populate IP Lookup Table"
           TopLeft="449.249982509763,769.350874901671" />
         <NodeLayout
-          Size="171,43"
+          Size="170.666666666667,42.6666666666667"
           Id="Package\Start Audit Process"
           TopLeft="427.430536447921,110.842104046134" />
         <NodeLayout
-          Size="175,43"
+          Size="174.666666666667,42.6666666666667"
           Id="Package\Truncate Fact Table"
           TopLeft="99.999967589976,221.710524869634" />
         <NodeLayout
-          Size="213,43"
+          Size="213.333333333334,42.6666666666667"
           Id="Package\Truncate Geolite ASN Table"
           TopLeft="725.055531949633,216.684208092267" />
         <NodeLayout
-          Size="239,43"
+          Size="238.666666666667,42.6666666666667"
           Id="Package\Truncate Honeypot Staging Table"
           TopLeft="397.4305451651,216.31578705466" />
         <EdgeLayout
@@ -9729,7 +9723,9 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9751,7 +9747,9 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9944,19 +9942,19 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="176,43"
+          Size="176,42.6666666666667"
           Id="Package\Import Honeypot Attack Data\Success Row Count"
           TopLeft="234.660705851923,428.982452579428" />
         <NodeLayout
-          Size="164,43"
+          Size="164,42.6666666666667"
           Id="Package\Import Honeypot Attack Data\Failed Row Count"
           TopLeft="665.624970244245,194.999997858939" />
         <NodeLayout
-          Size="183,43"
+          Size="182.666666666667,42.6666666666667"
           Id="Package\Import Honeypot Attack Data\Validate Missing Data"
           TopLeft="209.999990612269,190.824559623047" />
         <NodeLayout
-          Size="175,43"
+          Size="174.666666666667,42.6666666666667"
           Id="Package\Import Honeypot Attack Data\OLE DB Destination"
           TopLeft="241.535705544587,501.438591878555" />
         <NodeLayout
@@ -9964,19 +9962,19 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
           Id="Package\Import Honeypot Attack Data\Flat File Destination"
           TopLeft="820.166642104587,291.499991282821" />
         <NodeLayout
-          Size="155,46"
+          Size="154.666666666667,46"
           Id="Package\Import Honeypot Attack Data\Flat File Source"
           TopLeft="224.999989941717,18.4736840076892" />
         <NodeLayout
-          Size="149,43"
+          Size="149.333333333334,42.6666666666667"
           Id="Package\Import Honeypot Attack Data\Audit Columns"
           TopLeft="227.499989829958,110.842104046133" />
         <NodeLayout
-          Size="123,43"
+          Size="122.666666666667,42.6666666666667"
           Id="Package\Import Honeypot Attack Data\Union All"
           TopLeft="483.74997837469,109.473683008527" />
         <NodeLayout
-          Size="156,43"
+          Size="156,42.6666666666667"
           Id="Package\Import Honeypot Attack Data\Derived Column"
           TopLeft="249.874989857897,312.684207664055" />
         <EdgeLayout
@@ -9998,9 +9996,7 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-30.72357421875,5.5304785037306,61.4471484375,11.228515625"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10058,9 +10054,7 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-30.72357421875,13.8199522067221,61.4471484375,11.228515625"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10095,7 +10089,7 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="22.9110337130145,23.2764501061423,172.4834765625,11.609375"
+              BoundingBox="45.5263852755145,23.2764501061423,127.2527734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -10118,9 +10112,7 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-30.72357421875,27.2848646451865,61.4471484375,11.228515625"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10142,9 +10134,7 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-30.72357421875,9.2936366426235,61.4471484375,11.228515625"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10203,7 +10193,7 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-46.729921875,29.875136520504,93.45984375,11.609375"
+              BoundingBox="-11.351171875,30.805312301754,22.70234375,9.7490234375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -10238,9 +10228,7 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="68.648921716027,19.8944876666916,36.5771484375,9.5732421875"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10274,9 +10262,7 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="61.982261711421,31.749996711941,36.5771484375,9.5732421875"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -10301,17 +10287,9 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="148,43"
-          Id="Package\Populate Fact Table\DimGeoOrigin"
-          TopLeft="334.923068670126,553.076910468249" />
-        <NodeLayout
           Size="176,43"
           Id="Package\Populate Fact Table\Success Row Count"
           TopLeft="840.25959457672,306.635619252215" />
-        <NodeLayout
-          Size="173,43"
-          Id="Package\Populate Fact Table\Flat File Destination"
-          TopLeft="1016.99996969104,49.9999985098839" />
         <NodeLayout
           Size="135,43"
           Id="Package\Populate Fact Table\DimHost"
@@ -10320,6 +10298,10 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
           Size="164,43"
           Id="Package\Populate Fact Table\Failed Row Count"
           TopLeft="736.384593438643,44.8461525096344" />
+        <NodeLayout
+          Size="173,43"
+          Id="Package\Populate Fact Table\Flat File Destination"
+          TopLeft="1016.99996969104,49.9999985098839" />
         <NodeLayout
           Size="155,43"
           Id="Package\Populate Fact Table\OLE DB Source"
@@ -10337,49 +10319,17 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
           Id="Package\Populate Fact Table\DimProtocol"
           TopLeft="304.923068372103,379.999990165234" />
         <NodeLayout
+          Size="175,43"
+          Id="Package\Populate Fact Table\OLE DB Destination"
+          TopLeft="870.238072194515,549.776929588455" />
+        <NodeLayout
           Size="127,43"
           Id="Package\Populate Fact Table\DimASN"
           TopLeft="695.624976502732,550.859644758046" />
         <NodeLayout
-          Size="175,43"
-          Id="Package\Populate Fact Table\OLE DB Destination"
-          TopLeft="870.238072194515,549.776929588455" />
-        <EdgeLayout
-          Id="Package\Populate Fact Table.Paths[Lookup Error Output]"
-          TopLeft="392.948709079088,161.846149171774">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="297.884599108536,90.364374770067"
-              Start="0,0"
-              End="297.884599108536,82.864374770067">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,41.1939451593839" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,41.1939451593839"
-                    Point2="0,45.1939451593839"
-                    Point3="4,45.1939451593839" />
-                  <mssgle:LineSegment
-                    End="293.884599108536,45.1939451593839" />
-                  <mssgle:CubicBezierSegment
-                    Point1="293.884599108536,45.1939451593839"
-                    Point2="297.884599108536,45.1939451593839"
-                    Point3="297.884599108536,49.1939451593839" />
-                  <mssgle:LineSegment
-                    End="297.884599108536,82.864374770067" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="103.075912835518,50.1939451593839,91.7327734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          Size="148,43"
+          Id="Package\Populate Fact Table\DimGeoOrigin"
+          TopLeft="334.923068670126,553.076910468249" />
         <EdgeLayout
           Id="Package\Populate Fact Table.Paths[Union All Output 1]"
           TopLeft="729.166641520958,252.210523941841">
@@ -10411,7 +10361,9 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10433,7 +10385,9 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10455,7 +10409,9 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10477,7 +10433,9 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10732,32 +10690,45 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Populate Fact Table.Paths[Lookup Error Output]"
+          TopLeft="392.948709079088,161.846149171774">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="297.884599108536,90.364374770067"
+              Start="0,0"
+              End="297.884599108536,82.864374770067">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,41.1939451593839" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,41.1939451593839"
+                    Point2="0,45.1939451593839"
+                    Point3="4,45.1939451593839" />
+                  <mssgle:LineSegment
+                    End="293.884599108536,45.1939451593839" />
+                  <mssgle:CubicBezierSegment
+                    Point1="293.884599108536,45.1939451593839"
+                    Point2="297.884599108536,45.1939451593839"
+                    Point3="297.884599108536,49.1939451593839" />
+                  <mssgle:LineSegment
+                    End="297.884599108536,82.864374770067" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="103.075912835518,50.1939451593839,91.7327734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Populate Fact Table\DimGeoOrigin">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:string">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[DimGeoOrigin]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:string">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Populate Fact Table\DimHost">
     <Properties>
@@ -10841,29 +10812,6 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Populate Fact Table\DimASN">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[stg_asn_lookup]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Populate Fact Table\OLE DB Destination">
     <Properties>
       <Property>
@@ -10873,6 +10821,52 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Populate Fact Table\DimASN">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[stg_asn_lookup]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Populate Fact Table\DimGeoOrigin">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[DimGeoOrigin]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
