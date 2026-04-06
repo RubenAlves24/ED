@@ -11,8 +11,8 @@
   DTS:LocaleID="2070"
   DTS:ObjectName="ETL"
   DTS:PackageType="5"
-  DTS:VersionBuild="161"
-  DTS:VersionGUID="{EA7F8E68-7C9D-4C7D-A2DB-567E806138BD}">
+  DTS:VersionBuild="176"
+  DTS:VersionGUID="{1ADB15FB-DEB9-4019-B8DC-C9B646932FE6}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -21,11 +21,13 @@
       DTS:CreationName="OLEDB"
       DTS:DTSID="{E263DB70-F6A4-4BB5-BF87-A86BC3BE1E1A}"
       DTS:ObjectName="(LocalDB)\MSSQLLocalDB.HoneypotDW">
+      <DTS:PropertyExpression
+        DTS:Name="ServerName">@[User::DbServer]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=HoneypotDW;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-ETL-{E263DB70-F6A4-4BB5-BF87-A86BC3BE1E1A}(LocalDB)\MSSQLLocalDB.HoneypotDW;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=HoneypotDW;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-ETL-{E263DB70-F6A4-4BB5-BF87-A86BC3BE1E1A}(LocalDB)\MSSQLLocalDB.HoneypotDW;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -33,6 +35,8 @@
       DTS:CreationName="FLATFILE"
       DTS:DTSID="{363B9093-C91C-4E97-BF69-A26648A9E52F}"
       DTS:ObjectName="Error Import Geolite">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::ErrorFilesPath] + "ErrorImportGeolite.txt"</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:Format="Delimited"
@@ -105,6 +109,8 @@
       DTS:CreationName="FLATFILE"
       DTS:DTSID="{FDD4E69B-265F-4B7F-B813-CD205104E99A}"
       DTS:ObjectName="Error Import Honeypot">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::ErrorFilesPath] + "ErrorImportHoneypot.txt"</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:Format="Delimited"
@@ -311,6 +317,8 @@
       DTS:CreationName="FLATFILE"
       DTS:DTSID="{CCDB0CBE-5C2E-48CC-81F1-1BF1292A2441}"
       DTS:ObjectName="Error Populate Fact Table">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::ErrorFilesPath] + "ErrorPopulateFactTable.txt"</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:Format="Delimited"
@@ -458,6 +466,8 @@
       DTS:CreationName="FLATFILE"
       DTS:DTSID="{156FFC9D-DF8E-46BB-ADF9-A5AFA0CF604A}"
       DTS:ObjectName="GeoliteData">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::SrcFilesPath] + "GeoLite2-ASN-Blocks-IPv4.csv"</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:Format="Delimited"
@@ -505,6 +515,8 @@
       DTS:CreationName="FLATFILE"
       DTS:DTSID="{dddb889e-20c2-458a-9718-47259643d499}"
       DTS:ObjectName="HoneypotData_10k">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::SrcFilesPath] + "AWS_Honeypot_marx-geo_10k.csv"</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:Format="Delimited"
@@ -669,6 +681,8 @@
       DTS:CreationName="FLATFILE"
       DTS:DTSID="{DC92970D-05B9-4F67-8A5E-B46B1B331A7B}"
       DTS:ObjectName="HoneypotData_Full">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::SrcFilesPath] + "AWS_Honeypot_marx-geo.csv"</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:Format="Delimited"
@@ -828,20 +842,26 @@
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[localhost.HoneypotDW]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{06C4C3A1-F613-4FED-924B-A97AF1B855FC}"
-      DTS:ObjectName="localhost.HoneypotDW">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectRetryCount="1"
-          DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=HoneypotDW;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package-{06C4C3A1-F613-4FED-924B-A97AF1B855FC}localhost.HoneypotDW;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
   <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{9E5E059E-996D-4698-86E6-9C9014E67DC0}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="DbServer">
+      <DTS:VariableValue
+        DTS:DataType="8">localhost</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{4E2C768F-442D-400B-9F0C-C0A4CDFAB796}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="ErrorFilesPath">
+      <DTS:VariableValue
+        DTS:DataType="8">C:\Users\guesi.DESKTOP-4N7APLK\OneDrive\Documents\engenharia de dados\projeto\dados\</DTS:VariableValue>
+    </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
       DTS:DTSID="{C1EA789C-0BA7-44B7-9E64-76F134A90204}"
@@ -917,6 +937,15 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
+      DTS:DTSID="{2695EEDE-F597-4286-B5DE-763B361DF745}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="SrcFilesPath">
+      <DTS:VariableValue
+        DTS:DataType="8">C:\Users\guesi.DESKTOP-4N7APLK\OneDrive\Documents\engenharia de dados\projeto\dados\</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
       DTS:DTSID="{137BA10C-17D7-43A7-8AB8-50535F9564F5}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
@@ -971,7 +1000,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{06C4C3A1-F613-4FED-924B-A97AF1B855FC}"
+          SQLTask:Connection="{E263DB70-F6A4-4BB5-BF87-A86BC3BE1E1A}"
           SQLTask:SqlStatementSource="UPDATE dbo.stg_geolite&#xA;SET&#xA;ip_start_int = dbo.fn_IPtoInt(&#xA;LEFT(network, CHARINDEX('/', network) - 1)&#xA;),&#xA;ip_end_int = dbo.fn_IPtoInt(&#xA;LEFT(network, CHARINDEX('/', network) - 1)&#xA;)&#xA;+ CAST(&#xA;POWER(2.0, 32 - CAST(RIGHT(network, LEN(network) - CHARINDEX('/',&#xA;network)) AS INT)) - 1&#xA;AS BIGINT)&#xA;WHERE network IS NOT NULL&#xA;AND CHARINDEX('/', network) &gt; 0;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -988,7 +1017,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{06C4C3A1-F613-4FED-924B-A97AF1B855FC}"
+          SQLTask:Connection="{E263DB70-F6A4-4BB5-BF87-A86BC3BE1E1A}"
           SQLTask:SqlStatementSource="UPDATE [dbo].[DW_Audit]&#xA;SET [end_on]=getdate()&#xA;,[success_row_count] = ?&#xA;,[failed_row_count] = ?&#xA;,[execution_status] = 'FINISHED'&#xA;WHERE [run_id] = ?" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ParameterBinding
             SQLTask:ParameterName="2"
@@ -5426,7 +5455,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{06C4C3A1-F613-4FED-924B-A97AF1B855FC}"
+          SQLTask:Connection="{E263DB70-F6A4-4BB5-BF87-A86BC3BE1E1A}"
           SQLTask:SqlStatementSource="IF NOT EXISTS (&#xA;SELECT 1 FROM sys.indexes&#xA;WHERE object_id = OBJECT_ID('dbo.stg_geolite')&#xA;AND name = 'IX_stg_geolite_range'&#xA;)&#xA;BEGIN&#xA;CREATE INDEX IX_stg_geolite_range ON dbo.stg_geolite(ip_start_int, ip_end_int) INCLUDE(autonomous_system_number, autonomous_system_organization, network); &#xA;END" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -5439,11 +5468,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       DTS:LocaleID="-1"
       DTS:ObjectName="Merge DimASN"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{06C4C3A1-F613-4FED-924B-A97AF1B855FC}"
+          SQLTask:Connection="{E263DB70-F6A4-4BB5-BF87-A86BC3BE1E1A}"
           SQLTask:SqlStatementSource="MERGE dbo.DimASN AS target&#xA;USING (&#xA;    SELECT DISTINCT&#xA;        autonomous_system_number        AS ASNumber,&#xA;        autonomous_system_organization  AS ASOrganization,&#xA;        network                         AS NetworkCIDR,&#xA;        DW_row_checksum_asn AS src_checksum&#xA;    FROM dbo.stg_geolite&#xA;    WHERE network IS NOT NULL&#xA;) AS source&#xA;ON target.NetworkCIDR = source.NetworkCIDR&#xA;WHEN NOT MATCHED THEN&#xA;    INSERT (ASNumber, ASOrganization, NetworkCIDR,&#xA;            DW_row_checksum, DW_run_id, DW_updated_on, DW_source_system)&#xA;    VALUES (source.ASNumber, source.ASOrganization, source.NetworkCIDR,&#xA;            source.src_checksum, ?, GETDATE(), 'GeoLite2 ASN')&#xA;WHEN MATCHED AND target.DW_row_checksum &lt;&gt; source.src_checksum THEN&#xA;    UPDATE SET&#xA;        target.ASNumber         = source.ASNumber,&#xA;        target.ASOrganization   = source.ASOrganization,&#xA;        target.DW_row_checksum  = source.src_checksum,&#xA;        target.DW_run_id        = ?,&#xA;        target.DW_updated_on    = GETDATE(),&#xA;        target.DW_source_system = 'GeoLite2 ASN';" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ParameterBinding
             SQLTask:ParameterName="0"
@@ -5469,11 +5498,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       DTS:LocaleID="-1"
       DTS:ObjectName="Merge DimDate"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{06C4C3A1-F613-4FED-924B-A97AF1B855FC}"
+          SQLTask:Connection="{E263DB70-F6A4-4BB5-BF87-A86BC3BE1E1A}"
           SQLTask:SqlStatementSource="MERGE dbo.DimDate AS target&#xA;USING (&#xA;    SELECT DISTINCT&#xA;        datetime                        AS FullDate,&#xA;        YEAR(datetime)                  AS [Year],&#xA;        MONTH(datetime)                 AS [Month],&#xA;        DAY(datetime)                   AS [Day],&#xA;        DATEPART(HOUR, datetime)        AS [Hour],&#xA;        DATEPART(MINUTE, datetime)      AS [Minute],&#xA;        DATENAME(WEEKDAY, datetime)     AS [WeekDay],&#xA;        DW_row_checksum_date AS src_checksum&#xA;    FROM dbo.stg_honeypot&#xA;    WHERE datetime IS NOT NULL&#xA;) AS source&#xA;ON target.FullDate = source.FullDate&#xA;WHEN NOT MATCHED THEN&#xA;    INSERT (FullDate, [Year], [Month], [Day], [Hour], [Minute], [WeekDay],&#xA;            DW_row_checksum, DW_run_id, DW_updated_on, DW_source_system)&#xA;    VALUES (source.FullDate, source.[Year], source.[Month], source.[Day],&#xA;            source.[Hour], source.[Minute], source.[WeekDay],&#xA;            source.src_checksum, ?, GETDATE(), 'Honeypot Logs');" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ParameterBinding
             SQLTask:ParameterName="0"
@@ -5493,12 +5522,12 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       DTS:LocaleID="-1"
       DTS:ObjectName="Merge DimGeoOrigin"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="2">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{06C4C3A1-F613-4FED-924B-A97AF1B855FC}"
-          SQLTask:SqlStatementSource="MERGE dbo.DimGeoOrigin AS target&#xA;USING (&#xA;    SELECT DISTINCT&#xA;        cc          AS CountryCode,&#xA;        country     AS Country,&#xA;        locale      AS Locale,&#xA;        localeabbr  AS LocaleAbrev,&#xA;        postalcode  AS PostalCode,&#xA;        latitude    AS Latitude,&#xA;        longitude   AS Longitude,&#xA;        DW_row_checksum_geo AS src_checksum&#xA;    FROM dbo.stg_honeypot&#xA;) AS source&#xA;ON  target.CountryCode = source.CountryCode&#xA;AND target.Locale      = source.Locale&#xA;AND target.PostalCode  = source.PostalCode&#xA;AND ISNULL(target.Latitude, 0)  = ISNULL(source.Latitude, 0)&#xA;AND ISNULL(target.Longitude, 0) = ISNULL(source.Longitude, 0)&#xA;WHEN NOT MATCHED THEN&#xA;    INSERT (CountryCode, Country, Locale, LocaleAbrev, PostalCode, Latitude, Longitude,&#xA;            DW_row_checksum, DW_run_id, DW_updated_on, DW_source_system)&#xA;    VALUES (source.CountryCode, source.Country, source.Locale, source.LocaleAbrev,&#xA;            source.PostalCode, source.Latitude, source.Longitude,&#xA;            source.src_checksum, ?, GETDATE(), 'Honeypot Logs')&#xA;WHEN MATCHED AND target.DW_row_checksum &lt;&gt; source.src_checksum THEN&#xA;    UPDATE SET&#xA;        target.Country          = source.Country,&#xA;        target.LocaleAbrev      = source.LocaleAbrev,&#xA;        target.Latitude         = source.Latitude,&#xA;        target.Longitude        = source.Longitude,&#xA;        target.DW_row_checksum  = source.src_checksum,&#xA;        target.DW_run_id        = ?,&#xA;        target.DW_updated_on    = GETDATE(),&#xA;        target.DW_source_system = 'Honeypot Logs';" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          SQLTask:Connection="{E263DB70-F6A4-4BB5-BF87-A86BC3BE1E1A}"
+          SQLTask:SqlStatementSource="MERGE dbo.DimGeoOrigin AS target&#xA;USING (&#xA;    SELECT DISTINCT&#xA;        ISNULL(NULLIF(cc,''), 'XX')          AS CountryCode,&#xA;        ISNULL(NULLIF(country,''), 'Unknown') AS Country,&#xA;        locale      AS Locale,&#xA;        localeabbr  AS LocaleAbrev,&#xA;        postalcode  AS PostalCode,&#xA;        latitude    AS Latitude,&#xA;        longitude   AS Longitude,&#xA;        DW_row_checksum_geo AS src_checksum&#xA;    FROM dbo.stg_honeypot&#xA;) AS source&#xA;ON ISNULL(target.CountryCode,'') = ISNULL(source.CountryCode,'')&#xA;AND ISNULL(target.Locale,'')      = ISNULL(source.Locale,'')&#xA;AND ISNULL(target.PostalCode,'')  = ISNULL(source.PostalCode,'')&#xA;AND ROUND(ISNULL(target.Latitude,0),4)  = ROUND(ISNULL(source.Latitude,0),4)&#xA;AND ROUND(ISNULL(target.Longitude,0),4) = ROUND(ISNULL(source.Longitude,0),4)&#xA;WHEN NOT MATCHED THEN&#xA;    INSERT (CountryCode, Country, Locale, LocaleAbrev, PostalCode, Latitude, Longitude,&#xA;            DW_row_checksum, DW_run_id, DW_updated_on, DW_source_system)&#xA;    VALUES (source.CountryCode, source.Country, source.Locale, source.LocaleAbrev,&#xA;            source.PostalCode, source.Latitude, source.Longitude,&#xA;            source.src_checksum, ?, GETDATE(), 'Honeypot Logs')&#xA;WHEN MATCHED AND target.DW_row_checksum &lt;&gt; source.src_checksum THEN&#xA;    UPDATE SET&#xA;        target.Country          = source.Country,&#xA;        target.LocaleAbrev      = source.LocaleAbrev,&#xA;        target.Latitude         = source.Latitude,&#xA;        target.Longitude        = source.Longitude,&#xA;        target.DW_row_checksum  = source.src_checksum,&#xA;        target.DW_run_id        = ?,&#xA;        target.DW_updated_on    = GETDATE(),&#xA;        target.DW_source_system = 'Honeypot Logs';" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ParameterBinding
             SQLTask:ParameterName="0"
             SQLTask:DtsVariableName="User::RunId"
@@ -5527,7 +5556,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{06C4C3A1-F613-4FED-924B-A97AF1B855FC}"
+          SQLTask:Connection="{E263DB70-F6A4-4BB5-BF87-A86BC3BE1E1A}"
           SQLTask:SqlStatementSource="MERGE dbo.DimHost AS target&#xA;USING (&#xA;    SELECT DISTINCT&#xA;        host AS HostName,&#xA;        CASE&#xA;            WHEN CHARINDEX('-', host) &gt; 0&#xA;            THEN SUBSTRING(host, CHARINDEX('-', host) + 1, LEN(host))&#xA;            ELSE NULL&#xA;        END AS Region,&#xA;        DW_row_checksum_host AS src_checksum&#xA;    FROM dbo.stg_honeypot&#xA;    WHERE host IS NOT NULL&#xA;) AS source&#xA;ON target.HostName = source.HostName&#xA;WHEN NOT MATCHED THEN&#xA;    INSERT (HostName, Region, DW_row_checksum, DW_run_id, DW_updated_on, DW_source_system)&#xA;    VALUES (source.HostName, source.Region, source.src_checksum, ?, GETDATE(), 'Honeypot Logs')&#xA;WHEN MATCHED AND target.DW_row_checksum &lt;&gt; source.src_checksum THEN&#xA;    UPDATE SET&#xA;        target.Region           = source.Region,&#xA;        target.DW_row_checksum  = source.src_checksum,&#xA;        target.DW_run_id        = ?,&#xA;        target.DW_updated_on    = GETDATE(),&#xA;        target.DW_source_system = 'Honeypot Logs';" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ParameterBinding
             SQLTask:ParameterName="0"
@@ -5557,7 +5586,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{06C4C3A1-F613-4FED-924B-A97AF1B855FC}"
+          SQLTask:Connection="{E263DB70-F6A4-4BB5-BF87-A86BC3BE1E1A}"
           SQLTask:SqlStatementSource="MERGE dbo.DimProtocol AS target&#xA;USING (&#xA;    SELECT DISTINCT&#xA;        proto AS ProtocolName,&#xA;        DW_row_checksum_proto AS src_checksum&#xA;    FROM dbo.stg_honeypot&#xA;    WHERE proto IS NOT NULL&#xA;) AS source&#xA;ON target.ProtocolName = source.ProtocolName&#xA;WHEN NOT MATCHED THEN&#xA;    INSERT (ProtocolName, DW_row_checksum, DW_run_id, DW_updated_on, DW_source_system)&#xA;    VALUES (source.ProtocolName, source.src_checksum, ?, GETDATE(), 'Honeypot Logs')&#xA;WHEN MATCHED AND target.DW_row_checksum &lt;&gt; source.src_checksum THEN&#xA;    UPDATE SET&#xA;        target.DW_row_checksum  = source.src_checksum,&#xA;        target.DW_run_id        = ?,&#xA;        target.DW_updated_on    = GETDATE(),&#xA;        target.DW_source_system = 'Honeypot Logs';" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ParameterBinding
             SQLTask:ParameterName="0"
@@ -8614,7 +8643,7 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{06C4C3A1-F613-4FED-924B-A97AF1B855FC}"
+          SQLTask:Connection="{E263DB70-F6A4-4BB5-BF87-A86BC3BE1E1A}"
           SQLTask:SqlStatementSource="EXEC dbo.sp_Populate_ASN_Lookup" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -8631,7 +8660,7 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{06C4C3A1-F613-4FED-924B-A97AF1B855FC}"
+          SQLTask:Connection="{E263DB70-F6A4-4BB5-BF87-A86BC3BE1E1A}"
           SQLTask:SqlStatementSource="INSERT INTO [dbo].[DW_Audit]&#xA;           ([run_id]&#xA;           ,[start_on]&#xA;           ,[name]&#xA;           ,[execution_status])&#xA;     VALUES&#xA;           (?&#xA;           ,getdate()&#xA;           ,'Attack_Import'&#xA;           ,'RUNNING')" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ParameterBinding
             SQLTask:ParameterName="0"
@@ -8655,7 +8684,7 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{06C4C3A1-F613-4FED-924B-A97AF1B855FC}"
+          SQLTask:Connection="{E263DB70-F6A4-4BB5-BF87-A86BC3BE1E1A}"
           SQLTask:SqlStatementSource="TRUNCATE TABLE dbo.FactAttack" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -8672,7 +8701,7 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{06C4C3A1-F613-4FED-924B-A97AF1B855FC}"
+          SQLTask:Connection="{E263DB70-F6A4-4BB5-BF87-A86BC3BE1E1A}"
           SQLTask:SqlStatementSource="TRUNCATE TABLE dbo.stg_geolite" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -8689,7 +8718,7 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{06C4C3A1-F613-4FED-924B-A97AF1B855FC}"
+          SQLTask:Connection="{E263DB70-F6A4-4BB5-BF87-A86BC3BE1E1A}"
           SQLTask:SqlStatementSource="TRUNCATE TABLE dbo.stg_honeypot;&#xA;TRUNCATE TABLE dbo.stg_asn_lookup" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -8959,7 +8988,7 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
         <NodeLayout
           Size="175,43"
           Id="Package\Truncate Fact Table"
-          TopLeft="99.999967589976,221.710524869634" />
+          TopLeft="97.999967589976,220.710524869634" />
         <NodeLayout
           Size="213,43"
           Id="Package\Truncate Geolite ASN Table"
@@ -9368,26 +9397,26 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-284.680568857945,67.8684208235"
+              EndConnector="-286.680568857945,66.8684208235"
               Start="0,0"
-              End="-284.680568857945,60.3684208235">
+              End="-286.680568857945,59.3684208235">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,19.3175572503004" />
+                    End="0,18.9739871927188" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,19.3175572503004"
-                    Point2="0,23.3175572503004"
-                    Point3="-4,23.3175572503004" />
+                    Point1="0,18.9739871927188"
+                    Point2="0,22.9739871927188"
+                    Point3="-4,22.9739871927188" />
                   <mssgle:LineSegment
-                    End="-280.680568857945,23.3175572503004" />
+                    End="-282.680568857945,22.9739871927188" />
                   <mssgle:CubicBezierSegment
-                    Point1="-280.680568857945,23.3175572503004"
-                    Point2="-284.680568857945,23.3175572503004"
-                    Point3="-284.680568857945,27.3175572503004" />
+                    Point1="-282.680568857945,22.9739871927188"
+                    Point2="-286.680568857945,22.9739871927188"
+                    Point3="-286.680568857945,26.9739871927188" />
                   <mssgle:LineSegment
-                    End="-284.680568857945,60.3684208235" />
+                    End="-286.680568857945,59.3684208235" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -9694,7 +9723,7 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-46.729921875,28.1595969264,93.45984375,11.609375"
+              BoundingBox="-11.351171875,29.08977270765,22.70234375,9.7490234375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -9773,9 +9802,7 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-30.6137109375,11.7351263598912,61.227421875,11.2236328125"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9833,9 +9860,7 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-30.6137109375,6.99396107206265,61.227421875,11.2236328125"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9857,9 +9882,7 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-30.6137109375,10.3632949062505,61.227421875,11.2236328125"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9881,9 +9904,7 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-30.6137109375,5.5693710006978,61.227421875,11.2236328125"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9998,9 +10019,7 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-30.72357421875,5.5304785037306,61.4471484375,11.228515625"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10058,9 +10077,7 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-30.72357421875,13.8199522067221,61.4471484375,11.228515625"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10095,7 +10112,7 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="22.9110337130145,23.2764501061423,172.4834765625,11.609375"
+              BoundingBox="45.5263852755145,23.2764501061423,127.2527734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -10118,9 +10135,7 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-30.72357421875,27.2848646451865,61.4471484375,11.228515625"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10142,9 +10157,7 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-30.72357421875,9.2936366426235,61.4471484375,11.228515625"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10203,7 +10216,7 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-46.729921875,29.875136520504,93.45984375,11.609375"
+              BoundingBox="-11.351171875,30.805312301754,22.70234375,9.7490234375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -10238,9 +10251,7 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="68.648921716027,19.8944876666916,36.5771484375,9.5732421875"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10274,9 +10285,7 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="61.982261711421,31.749996711941,36.5771484375,9.5732421875"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -10301,17 +10310,9 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="148,43"
-          Id="Package\Populate Fact Table\DimGeoOrigin"
-          TopLeft="334.923068670126,553.076910468249" />
-        <NodeLayout
           Size="176,43"
           Id="Package\Populate Fact Table\Success Row Count"
           TopLeft="840.25959457672,306.635619252215" />
-        <NodeLayout
-          Size="173,43"
-          Id="Package\Populate Fact Table\Flat File Destination"
-          TopLeft="1016.99996969104,49.9999985098839" />
         <NodeLayout
           Size="135,43"
           Id="Package\Populate Fact Table\DimHost"
@@ -10320,6 +10321,10 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
           Size="164,43"
           Id="Package\Populate Fact Table\Failed Row Count"
           TopLeft="736.384593438643,44.8461525096344" />
+        <NodeLayout
+          Size="173,43"
+          Id="Package\Populate Fact Table\Flat File Destination"
+          TopLeft="1016.99996969104,49.9999985098839" />
         <NodeLayout
           Size="155,43"
           Id="Package\Populate Fact Table\OLE DB Source"
@@ -10337,49 +10342,17 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
           Id="Package\Populate Fact Table\DimProtocol"
           TopLeft="304.923068372103,379.999990165234" />
         <NodeLayout
+          Size="175,43"
+          Id="Package\Populate Fact Table\OLE DB Destination"
+          TopLeft="870.238072194515,549.776929588455" />
+        <NodeLayout
           Size="127,43"
           Id="Package\Populate Fact Table\DimASN"
           TopLeft="695.624976502732,550.859644758046" />
         <NodeLayout
-          Size="175,43"
-          Id="Package\Populate Fact Table\OLE DB Destination"
-          TopLeft="870.238072194515,549.776929588455" />
-        <EdgeLayout
-          Id="Package\Populate Fact Table.Paths[Lookup Error Output]"
-          TopLeft="392.948709079088,161.846149171774">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="297.884599108536,90.364374770067"
-              Start="0,0"
-              End="297.884599108536,82.864374770067">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,41.1939451593839" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,41.1939451593839"
-                    Point2="0,45.1939451593839"
-                    Point3="4,45.1939451593839" />
-                  <mssgle:LineSegment
-                    End="293.884599108536,45.1939451593839" />
-                  <mssgle:CubicBezierSegment
-                    Point1="293.884599108536,45.1939451593839"
-                    Point2="297.884599108536,45.1939451593839"
-                    Point3="297.884599108536,49.1939451593839" />
-                  <mssgle:LineSegment
-                    End="297.884599108536,82.864374770067" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="103.075912835518,50.1939451593839,91.7327734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          Size="148,43"
+          Id="Package\Populate Fact Table\DimGeoOrigin"
+          TopLeft="334.923068670126,553.076910468249" />
         <EdgeLayout
           Id="Package\Populate Fact Table.Paths[Union All Output 1]"
           TopLeft="729.166641520958,252.210523941841">
@@ -10411,7 +10384,9 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10433,7 +10408,9 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10455,7 +10432,9 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10477,7 +10456,9 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10732,32 +10713,45 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Populate Fact Table.Paths[Lookup Error Output]"
+          TopLeft="392.948709079088,161.846149171774">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="297.884599108536,90.364374770067"
+              Start="0,0"
+              End="297.884599108536,82.864374770067">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,41.1939451593839" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,41.1939451593839"
+                    Point2="0,45.1939451593839"
+                    Point3="4,45.1939451593839" />
+                  <mssgle:LineSegment
+                    End="293.884599108536,45.1939451593839" />
+                  <mssgle:CubicBezierSegment
+                    Point1="293.884599108536,45.1939451593839"
+                    Point2="297.884599108536,45.1939451593839"
+                    Point3="297.884599108536,49.1939451593839" />
+                  <mssgle:LineSegment
+                    End="297.884599108536,82.864374770067" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="103.075912835518,50.1939451593839,91.7327734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Populate Fact Table\DimGeoOrigin">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:string">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[DimGeoOrigin]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:string">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Populate Fact Table\DimHost">
     <Properties>
@@ -10841,29 +10835,6 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Populate Fact Table\DimASN">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[stg_asn_lookup]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Populate Fact Table\OLE DB Destination">
     <Properties>
       <Property>
@@ -10873,6 +10844,52 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Populate Fact Table\DimASN">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[stg_asn_lookup]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Populate Fact Table\DimGeoOrigin">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[DimGeoOrigin]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
