@@ -11,8 +11,8 @@
   DTS:LocaleID="2070"
   DTS:ObjectName="ETL"
   DTS:PackageType="5"
-  DTS:VersionBuild="168"
-  DTS:VersionGUID="{F5225CB1-F9FB-4EFD-BE5C-F47FE15267D7}">
+  DTS:VersionBuild="174"
+  DTS:VersionGUID="{4FB5BAA1-4BF3-441A-9FAC-1A1BDAA62078}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -9012,9 +9012,9 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-140.586798088677,70.2538998193213"
+              EndConnector="-140.586798088678,70.2538998193213"
               Start="0,0"
-              End="-140.586798088677,62.7538998193213">
+              End="-140.586798088678,62.7538998193213">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -9025,13 +9025,13 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
                     Point2="0,28.5564412934651"
                     Point3="-4,28.5564412934651" />
                   <mssgle:LineSegment
-                    End="-136.586798088677,28.5564412934651" />
+                    End="-136.586798088678,28.5564412934651" />
                   <mssgle:CubicBezierSegment
-                    Point1="-136.586798088677,28.5564412934651"
-                    Point2="-140.586798088677,28.5564412934651"
-                    Point3="-140.586798088677,32.5564412934651" />
+                    Point1="-136.586798088678,28.5564412934651"
+                    Point2="-140.586798088678,28.5564412934651"
+                    Point3="-140.586798088678,32.5564412934651" />
                   <mssgle:LineSegment
-                    End="-140.586798088677,62.7538998193213" />
+                    End="-140.586798088678,62.7538998193213" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -9046,9 +9046,9 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="25.1631934983754,74.2738809757664"
+              EndConnector="25.163193498375,74.2738809757664"
               Start="0,0"
-              End="25.1631934983754,66.7738809757664">
+              End="25.163193498375,66.7738809757664">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -9059,13 +9059,13 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
                     Point2="0,37.1369404878832"
                     Point3="4,37.1369404878832" />
                   <mssgle:LineSegment
-                    End="21.1631934983754,37.1369404878832" />
+                    End="21.163193498375,37.1369404878832" />
                   <mssgle:CubicBezierSegment
-                    Point1="21.1631934983754,37.1369404878832"
-                    Point2="25.1631934983754,37.1369404878832"
-                    Point3="25.1631934983754,41.1369404878832" />
+                    Point1="21.163193498375,37.1369404878832"
+                    Point2="25.163193498375,37.1369404878832"
+                    Point3="25.163193498375,41.1369404878832" />
                   <mssgle:LineSegment
-                    End="25.1631934983754,66.7738809757664" />
+                    End="25.163193498375,66.7738809757664" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -9080,9 +9080,9 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="195.175090193253,70.6899211153684"
+              EndConnector="195.175090193253,70.6899211153685"
               Start="0,0"
-              End="195.175090193253,63.1899211153684">
+              End="195.175090193253,63.1899211153685">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -9099,7 +9099,7 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
                     Point2="195.175090193253,28.7336729713548"
                     Point3="195.175090193253,32.7336729713548" />
                   <mssgle:LineSegment
-                    End="195.175090193253,63.1899211153684" />
+                    End="195.175090193253,63.1899211153685" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -9250,9 +9250,9 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-170.428561852801,68.4197314575523"
+              EndConnector="-170.428561852801,68.4197314575522"
               Start="0,0"
-              End="-170.428561852801,60.9197314575523">
+              End="-170.428561852801,60.9197314575522">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -9269,7 +9269,7 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
                     Point2="-170.428561852801,40.7302840008405"
                     Point3="-170.428561852801,44.7302840008405" />
                   <mssgle:LineSegment
-                    End="-170.428561852801,60.9197314575523" />
+                    End="-170.428561852801,60.9197314575522" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -9314,18 +9314,18 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 19]"
-          TopLeft="552.565819963003,915.723676406921">
+          TopLeft="552.565819963003,915.390343073588">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,54.6241305500471"
+              EndConnector="0,54.9574638833805"
               Start="0,0"
-              End="0,47.1241305500471">
+              End="0,47.4574638833805">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,47.1241305500471" />
+                    End="0,47.4574638833805" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -9392,18 +9392,18 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 21]"
-          TopLeft="550.720277287126,812.350874901671">
+          TopLeft="550.553610620459,812.017541568338">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,60.37280150525"
+              EndConnector="0,60.7061348385834"
               Start="0,0"
-              End="0,52.87280150525">
+              End="0,53.2061348385834">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.87280150525" />
+                    End="0,53.2061348385834" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -9633,39 +9633,39 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="164,43"
+          Size="164,42.6666666666667"
           Id="Package\Import Geolite ASN Data\Failed Row Count"
           TopLeft="669.310037174276,326.964683587758" />
         <NodeLayout
-          Size="155,43"
+          Size="154.666666666667,42.6666666666667"
           Id="Package\Import Geolite ASN Data\Flat File Source"
           TopLeft="224.107132359808,174.47368229484" />
         <NodeLayout
-          Size="183,43"
+          Size="182.666666666667,42.6666666666667"
           Id="Package\Import Geolite ASN Data\Validate Missing Data"
           TopLeft="225.238088511286,322.380945398694" />
         <NodeLayout
-          Size="123,43"
+          Size="122.666666666667,42.6666666666667"
           Id="Package\Import Geolite ASN Data\Union All"
           TopLeft="494.523794771661,341.904756668068" />
         <NodeLayout
-          Size="175,43"
+          Size="174.666666666667,42.6666666666667"
           Id="Package\Import Geolite ASN Data\OLE DB Destination"
           TopLeft="245.011353199625,608.120289075444" />
         <NodeLayout
-          Size="176,43"
+          Size="176,42.6666666666667"
           Id="Package\Import Geolite ASN Data\Success Row Count"
           TopLeft="245.985379144623,523.259736876495" />
         <NodeLayout
-          Size="149,43"
+          Size="149.333333333334,42.6666666666667"
           Id="Package\Import Geolite ASN Data\Audit Columns"
           TopLeft="234.017846191835,249.851903918132" />
         <NodeLayout
-          Size="173,43"
+          Size="173.333333333334,42.6666666666667"
           Id="Package\Import Geolite ASN Data\Flat File Destination"
           TopLeft="664.374970300124,471.33332962216" />
         <NodeLayout
-          Size="156,43"
+          Size="156,42.6666666666667"
           Id="Package\Import Geolite ASN Data\Derived Column"
           TopLeft="255.952374055272,440.809514251494" />
         <EdgeLayout
@@ -9688,7 +9688,7 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-46.729921875,28.1595969264,93.45984375,11.609375"
+              BoundingBox="-46.729921875,28.1595969264,22.70234375,9.7490234375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -9723,9 +9723,7 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9747,9 +9745,7 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9771,9 +9767,7 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-30.6137109375,11.7351263598912,61.227421875,11.2236328125"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9831,9 +9825,7 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-30.6137109375,6.99396107206265,61.227421875,11.2236328125"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9855,9 +9847,7 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-30.6137109375,10.3632949062505,61.227421875,11.2236328125"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9879,9 +9869,7 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-30.6137109375,5.5693710006978,61.227421875,11.2236328125"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10095,18 +10083,18 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Import Honeypot Attack Data.Paths[Derived Column Output1]"
-          TopLeft="325.26784785491,355.684207664055">
+          TopLeft="325.26784785491,355.350874330722">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,73.298244915373"
+              EndConnector="0,73.6315782487063"
               Start="0,0"
-              End="0,65.798244915373">
+              End="0,66.1315782487063">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,65.798244915373" />
+                    End="0,66.1315782487063" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10143,57 +10131,57 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="192.708321850126,-160.210524655528"
+              EndConnector="192.54165518346,-160.543857988861"
               Start="0,0"
-              End="192.708321850126,-152.710524655528">
+              End="192.54165518346,-153.043857988861">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,-61.0601115352398" />
+                    End="0,-61.1954753254259" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,-61.0601115352398"
-                    Point2="0,-65.0601115352398"
-                    Point3="4,-65.0601115352398" />
+                    Point1="0,-61.1954753254259"
+                    Point2="0,-65.1954753254259"
+                    Point3="4,-65.1954753254259" />
                   <mssgle:LineSegment
-                    End="188.708321850126,-65.0601115352398" />
+                    End="188.54165518346,-65.1954753254259" />
                   <mssgle:CubicBezierSegment
-                    Point1="188.708321850126,-65.0601115352398"
-                    Point2="192.708321850126,-65.0601115352398"
-                    Point3="192.708321850126,-69.0601115352398" />
+                    Point1="188.54165518346,-65.1954753254259"
+                    Point2="192.54165518346,-65.1954753254259"
+                    Point3="192.54165518346,-69.1954753254259" />
                   <mssgle:LineSegment
-                    End="192.708321850126,-152.710524655528" />
+                    End="192.54165518346,-153.043857988861" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="31.3927742063132,-60.0601115352398,129.9227734375,11.609375"
+              BoundingBox="31.3094408729798,-60.1954753254259,129.9227734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Import Honeypot Attack Data.Paths[Valid]"
-          TopLeft="302.35415690175,233.824559623047">
+          TopLeft="302.270823568416,233.491226289714">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,78.859648041008"
+              EndConnector="0,79.1929813743413"
               Start="0,0"
-              End="0,71.359648041008">
+              End="0,71.6929813743413">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,71.359648041008" />
+                    End="0,71.6929813743413" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-11.351171875,30.805312301754,22.70234375,9.7490234375"
+              BoundingBox="-11.351171875,30.9719789684207,22.70234375,9.7490234375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -10287,47 +10275,47 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="176,43"
+          Size="176,42.6666666666667"
           Id="Package\Populate Fact Table\Success Row Count"
           TopLeft="840.25959457672,306.635619252215" />
         <NodeLayout
-          Size="135,43"
+          Size="134.666666666667,42.6666666666667"
           Id="Package\Populate Fact Table\DimHost"
           TopLeft="292.692299118409,254.538454042031" />
         <NodeLayout
-          Size="164,43"
+          Size="164,42.6666666666667"
           Id="Package\Populate Fact Table\Failed Row Count"
           TopLeft="736.384593438643,44.8461525096344" />
         <NodeLayout
-          Size="173,43"
+          Size="173.333333333334,42.6666666666667"
           Id="Package\Populate Fact Table\Flat File Destination"
           TopLeft="1016.99996969104,49.9999985098839" />
         <NodeLayout
-          Size="155,43"
+          Size="154.666666666667,42.6666666666667"
           Id="Package\Populate Fact Table\OLE DB Source"
           TopLeft="294.153837625797,29.9230759716951" />
         <NodeLayout
-          Size="121,43"
+          Size="121.333333333334,42.6666666666667"
           Id="Package\Populate Fact Table\DimDate"
           TopLeft="313.615375745755,118.846149171774" />
         <NodeLayout
-          Size="123,43"
+          Size="122.666666666667,42.6666666666667"
           Id="Package\Populate Fact Table\Union All"
           TopLeft="648.499974854291,252.210523941841" />
         <NodeLayout
-          Size="158,43"
+          Size="158,42.6666666666667"
           Id="Package\Populate Fact Table\DimProtocol"
           TopLeft="304.923068372103,379.999990165234" />
         <NodeLayout
-          Size="175,43"
+          Size="174.666666666667,42.6666666666667"
           Id="Package\Populate Fact Table\OLE DB Destination"
           TopLeft="870.238072194515,549.776929588455" />
         <NodeLayout
-          Size="127,43"
+          Size="126.666666666667,42.6666666666667"
           Id="Package\Populate Fact Table\DimASN"
           TopLeft="695.624976502732,550.859644758046" />
         <NodeLayout
-          Size="148,43"
+          Size="148,42.6666666666667"
           Id="Package\Populate Fact Table\DimGeoOrigin"
           TopLeft="334.923068670126,553.076910468249" />
         <EdgeLayout
@@ -10361,9 +10349,7 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10385,9 +10371,7 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10409,9 +10393,7 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10433,9 +10415,7 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
