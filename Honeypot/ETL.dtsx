@@ -11,8 +11,8 @@
   DTS:LocaleID="2070"
   DTS:ObjectName="ETL"
   DTS:PackageType="5"
-  DTS:VersionBuild="177"
-  DTS:VersionGUID="{24F8B044-2C9A-4A5A-827A-3722ADFA91A1}">
+  DTS:VersionBuild="190"
+  DTS:VersionGUID="{B7D58BA6-6B25-4326-9CA4-D0229B157CAA}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -45,7 +45,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\guesi.DESKTOP-4N7APLK\OneDrive\Documents\engenharia de dados\projeto\dados\ErrorImportGeolite.txt">
+          DTS:ConnectionString="C:\Users\tride\Documents\Escola\3ºANo\ED\dados\ErrorImportGeolite.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -119,7 +119,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\guesi.DESKTOP-4N7APLK\OneDrive\Documents\engenharia de dados\projeto\dados\ErrorImportHoneypot.txt">
+          DTS:ConnectionString="C:\Users\tride\Documents\Escola\3ºANo\ED\dados\ErrorImportHoneypot.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -327,7 +327,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\guesi.DESKTOP-4N7APLK\OneDrive\Documents\engenharia de dados\projeto\dados\ErrorPopulateFactTable.txt">
+          DTS:ConnectionString="C:\Users\tride\Documents\Escola\3ºANo\ED\dados\ErrorPopulateFactTable.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -477,7 +477,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\guesi.DESKTOP-4N7APLK\OneDrive\Documents\engenharia de dados\projeto\dados\GeoLite2-ASN-Blocks-IPv4.csv">
+          DTS:ConnectionString="C:\Users\tride\Documents\Escola\3ºANo\ED\dados\GeoLite2-ASN-Blocks-IPv4.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -526,7 +526,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\guesi.DESKTOP-4N7APLK\OneDrive\Documents\engenharia de dados\projeto\dados\AWS_Honeypot_marx-geo_10k.csv">
+          DTS:ConnectionString="C:\Users\tride\Documents\Escola\3ºANo\ED\dados\AWS_Honeypot_marx-geo_10k.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -692,7 +692,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\guesi.DESKTOP-4N7APLK\OneDrive\Documents\engenharia de dados\projeto\dados\AWS_Honeypot_marx-geo.csv">
+          DTS:ConnectionString="C:\Users\tride\Documents\Escola\3ºANo\ED\dados\AWS_Honeypot_marx-geo.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -860,7 +860,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="ErrorFilesPath">
       <DTS:VariableValue
-        DTS:DataType="8">C:\Users\guesi.DESKTOP-4N7APLK\OneDrive\Documents\engenharia de dados\projeto\dados\</DTS:VariableValue>
+        DTS:DataType="8">C:\Users\tride\Documents\Escola\3ºANo\ED\dados\</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -942,7 +942,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="SrcFilesPath">
       <DTS:VariableValue
-        DTS:DataType="8">C:\Users\guesi.DESKTOP-4N7APLK\OneDrive\Documents\engenharia de dados\projeto\dados\</DTS:VariableValue>
+        DTS:DataType="8">C:\Users\tride\Documents\Escola\3ºANo\ED\dados\</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -1057,6 +1057,36 @@
           VSTAMinorVersion="0"
           Language="CSharp"
           ReadOnlyVariables="User::RunId">
+          <ProjectItem
+            Name="Properties\AssemblyInfo.cs"
+            Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_9059fd0cbd224482a143d668cf7a247b")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_9059fd0cbd224482a143d668cf7a247b")]
+[assembly: AssemblyCopyright("Copyright @  2026")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.resx"
             Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -1262,35 +1292,6 @@
   </ProjectExtensions>
 </Project>]]></ProjectItem>
           <ProjectItem
-            Name="Properties\Settings.Designer.cs"
-            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_9059fd0cbd224482a143d668cf7a247b.Properties.Settings.get_Default():ST_9059fd0cbd224482a143d668cf7a247b.Properties.Sett" +
-    "ings")]
-
-namespace ST_9059fd0cbd224482a143d668cf7a247b.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
-          <ProjectItem
             Name="ScriptMain.cs"
             Encoding="UTF8"><![CDATA[#region Help:  Introduction to the script task
 /* The Script Task allows you to perform virtually any operation that can be accomplished in
@@ -1425,35 +1426,34 @@ namespace ST_9059fd0cbd224482a143d668cf7a247b
   </msb:ItemGroup>
 </c:Project>]]></ProjectItem>
           <ProjectItem
-            Name="Properties\AssemblyInfo.cs"
-            Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
+            Name="Properties\Settings.Designer.cs"
+            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
 
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_9059fd0cbd224482a143d668cf7a247b")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_9059fd0cbd224482a143d668cf7a247b")]
-[assembly: AssemblyCopyright("Copyright @  2026")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_9059fd0cbd224482a143d668cf7a247b.Properties.Settings.get_Default():ST_9059fd0cbd224482a143d668cf7a247b.Properties.Sett" +
+    "ings")]
 
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+namespace ST_9059fd0cbd224482a143d668cf7a247b.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
           <ProjectItem
             Name="Properties\Settings.settings"
             Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
@@ -4406,12 +4406,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
                       refId="Package\Import Honeypot Attack Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[stg_id]"
                       dataType="i4"
                       name="stg_id" />
-                    <externalMetadataColumn
-                      refId="Package\Import Honeypot Attack Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DW_row_checksum_date]"
-                      codePage="1252"
-                      dataType="str"
-                      length="64"
-                      name="DW_row_checksum_date" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -5468,25 +5462,12 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       DTS:LocaleID="-1"
       DTS:ObjectName="Merge DimASN"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{E263DB70-F6A4-4BB5-BF87-A86BC3BE1E1A}"
-          SQLTask:SqlStatementSource="MERGE dbo.DimASN AS target&#xA;USING (&#xA;    SELECT DISTINCT&#xA;        autonomous_system_number        AS ASNumber,&#xA;        autonomous_system_organization  AS ASOrganization,&#xA;        network                         AS NetworkCIDR,&#xA;        DW_row_checksum_asn AS src_checksum&#xA;    FROM dbo.stg_geolite&#xA;    WHERE network IS NOT NULL&#xA;) AS source&#xA;ON target.NetworkCIDR = source.NetworkCIDR&#xA;WHEN NOT MATCHED THEN&#xA;    INSERT (ASNumber, ASOrganization, NetworkCIDR,&#xA;            DW_row_checksum, DW_run_id, DW_updated_on, DW_source_system)&#xA;    VALUES (source.ASNumber, source.ASOrganization, source.NetworkCIDR,&#xA;            source.src_checksum, ?, GETDATE(), 'GeoLite2 ASN')&#xA;WHEN MATCHED AND target.DW_row_checksum &lt;&gt; source.src_checksum THEN&#xA;    UPDATE SET&#xA;        target.ASNumber         = source.ASNumber,&#xA;        target.ASOrganization   = source.ASOrganization,&#xA;        target.DW_row_checksum  = source.src_checksum,&#xA;        target.DW_run_id        = ?,&#xA;        target.DW_updated_on    = GETDATE(),&#xA;        target.DW_source_system = 'GeoLite2 ASN';" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
-          <SQLTask:ParameterBinding
-            SQLTask:ParameterName="0"
-            SQLTask:DtsVariableName="User::RunId"
-            SQLTask:ParameterDirection="Input"
-            SQLTask:DataType="129"
-            SQLTask:ParameterSize="-1" />
-          <SQLTask:ParameterBinding
-            SQLTask:ParameterName="1"
-            SQLTask:DtsVariableName="User::RunId"
-            SQLTask:ParameterDirection="Input"
-            SQLTask:DataType="129"
-            SQLTask:ParameterSize="-1" />
-        </SQLTask:SqlTaskData>
+          SQLTask:SqlStatementSource="MERGE dbo.DimASN AS T&#xA;USING (&#xA;    SELECT DISTINCT&#xA;        autonomous_system_number       AS ASNumber,&#xA;        autonomous_system_organization AS ASOrganization,&#xA;        network                        AS NetworkCIDR,&#xA;        DW_row_checksum_asn            AS DW_row_checksum,&#xA;        DW_run_id                      AS DW_run_id,&#xA;        DW_source_system               AS DW_source_system&#xA;    FROM dbo.stg_geolite&#xA;    WHERE network IS NOT NULL&#xA;) AS S&#xA;ON T.DW_row_checksum &lt;&gt; S.DW_row_checksum&#xA;AND T.NetworkCIDR = S.NetworkCIDR&#xA;WHEN MATCHED THEN&#xA;    UPDATE SET&#xA;        T.ASNumber         = S.ASNumber,&#xA;        T.ASOrganization   = S.ASOrganization,&#xA;        T.DW_row_checksum  = S.DW_row_checksum,&#xA;        T.DW_run_id        = S.DW_run_id,&#xA;        T.DW_updated_on    = GETDATE(),&#xA;        T.DW_source_system = S.DW_source_system;&#xA;&#xA;MERGE dbo.DimASN AS T&#xA;USING (&#xA;    SELECT DISTINCT&#xA;        autonomous_system_number       AS ASNumber,&#xA;        autonomous_system_organization AS ASOrganization,&#xA;        network                        AS NetworkCIDR,&#xA;        DW_row_checksum_asn            AS DW_row_checksum,&#xA;        DW_run_id                      AS DW_run_id,&#xA;        DW_source_system               AS DW_source_system&#xA;    FROM dbo.stg_geolite&#xA;    WHERE network IS NOT NULL&#xA;) AS S&#xA;ON T.NetworkCIDR = S.NetworkCIDR&#xA;WHEN NOT MATCHED THEN&#xA;    INSERT (ASNumber, ASOrganization, NetworkCIDR,&#xA;            DW_row_checksum, DW_run_id, DW_updated_on, DW_source_system)&#xA;    VALUES (S.ASNumber, S.ASOrganization, S.NetworkCIDR,&#xA;            S.DW_row_checksum, S.DW_run_id, GETDATE(), S.DW_source_system);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -5498,19 +5479,12 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       DTS:LocaleID="-1"
       DTS:ObjectName="Merge DimDate"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="4">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{E263DB70-F6A4-4BB5-BF87-A86BC3BE1E1A}"
-          SQLTask:SqlStatementSource="MERGE dbo.DimDate AS target&#xA;USING (&#xA;    SELECT DISTINCT&#xA;        datetime                        AS FullDate,&#xA;        YEAR(datetime)                  AS [Year],&#xA;        MONTH(datetime)                 AS [Month],&#xA;        DAY(datetime)                   AS [Day],&#xA;        DATEPART(HOUR, datetime)        AS [Hour],&#xA;        DATEPART(MINUTE, datetime)      AS [Minute],&#xA;        DATENAME(WEEKDAY, datetime)     AS [WeekDay]&#xA;    FROM dbo.stg_honeypot&#xA;    WHERE datetime IS NOT NULL&#xA;) AS source&#xA;ON target.FullDate = source.FullDate&#xA;WHEN NOT MATCHED THEN&#xA;    INSERT (FullDate, [Year], [Month], [Day], [Hour], [Minute], [WeekDay],&#xA;            DW_run_id, DW_updated_on, DW_source_system)&#xA;    VALUES (source.FullDate, source.[Year], source.[Month], source.[Day],&#xA;            source.[Hour], source.[Minute], source.[WeekDay],&#xA;            ?, GETDATE(), 'Honeypot Logs');" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
-          <SQLTask:ParameterBinding
-            SQLTask:ParameterName="0"
-            SQLTask:DtsVariableName="User::RunId"
-            SQLTask:ParameterDirection="Input"
-            SQLTask:DataType="129"
-            SQLTask:ParameterSize="-1" />
-        </SQLTask:SqlTaskData>
+          SQLTask:SqlStatementSource="MERGE dbo.DimDate AS T&#xA;USING (&#xA;    SELECT DISTINCT&#xA;        datetime                    AS FullDate,&#xA;        YEAR(datetime)              AS [Year],&#xA;        MONTH(datetime)             AS [Month],&#xA;        DAY(datetime)               AS [Day],&#xA;        DATEPART(HOUR, datetime)    AS [Hour],&#xA;        DATEPART(MINUTE, datetime)  AS [Minute],&#xA;        DATENAME(WEEKDAY, datetime) AS [WeekDay],&#xA;        DW_run_id                   AS DW_run_id,&#xA;        DW_source_system            AS DW_source_system&#xA;    FROM dbo.stg_honeypot&#xA;    WHERE datetime IS NOT NULL&#xA;) AS S&#xA;ON T.FullDate = S.FullDate&#xA;WHEN NOT MATCHED THEN&#xA;    INSERT (FullDate, [Year], [Month], [Day], [Hour], [Minute], [WeekDay],&#xA;            DW_run_id, DW_updated_on, DW_source_system)&#xA;    VALUES (S.FullDate, S.[Year], S.[Month], S.[Day],&#xA;            S.[Hour], S.[Minute], S.[WeekDay],&#xA;            S.DW_run_id, GETDATE(), S.DW_source_system);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -5522,25 +5496,12 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       DTS:LocaleID="-1"
       DTS:ObjectName="Merge DimGeoOrigin"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="3">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{E263DB70-F6A4-4BB5-BF87-A86BC3BE1E1A}"
-          SQLTask:SqlStatementSource="MERGE dbo.DimGeoOrigin AS target&#xA;USING (&#xA;    SELECT DISTINCT&#xA;        ISNULL(NULLIF(cc,''), 'XX')          AS CountryCode,&#xA;        ISNULL(NULLIF(country,''), 'Unknown') AS Country,&#xA;        locale      AS Locale,&#xA;        localeabbr  AS LocaleAbrev,&#xA;        postalcode  AS PostalCode,&#xA;        latitude    AS Latitude,&#xA;        longitude   AS Longitude,&#xA;        DW_row_checksum_geo AS src_checksum&#xA;    FROM dbo.stg_honeypot&#xA;) AS source&#xA;ON ISNULL(target.CountryCode,'') = ISNULL(source.CountryCode,'')&#xA;AND ISNULL(target.Locale,'')      = ISNULL(source.Locale,'')&#xA;AND ISNULL(target.PostalCode,'')  = ISNULL(source.PostalCode,'')&#xA;AND ROUND(ISNULL(target.Latitude,0),4)  = ROUND(ISNULL(source.Latitude,0),4)&#xA;AND ROUND(ISNULL(target.Longitude,0),4) = ROUND(ISNULL(source.Longitude,0),4)&#xA;WHEN NOT MATCHED THEN&#xA;    INSERT (CountryCode, Country, Locale, LocaleAbrev, PostalCode, Latitude, Longitude,&#xA;            DW_row_checksum, DW_run_id, DW_updated_on, DW_source_system)&#xA;    VALUES (source.CountryCode, source.Country, source.Locale, source.LocaleAbrev,&#xA;            source.PostalCode, source.Latitude, source.Longitude,&#xA;            source.src_checksum, ?, GETDATE(), 'Honeypot Logs')&#xA;WHEN MATCHED AND target.DW_row_checksum &lt;&gt; source.src_checksum THEN&#xA;    UPDATE SET&#xA;        target.Country          = source.Country,&#xA;        target.LocaleAbrev      = source.LocaleAbrev,&#xA;        target.Latitude         = source.Latitude,&#xA;        target.Longitude        = source.Longitude,&#xA;        target.DW_row_checksum  = source.src_checksum,&#xA;        target.DW_run_id        = ?,&#xA;        target.DW_updated_on    = GETDATE(),&#xA;        target.DW_source_system = 'Honeypot Logs';" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
-          <SQLTask:ParameterBinding
-            SQLTask:ParameterName="0"
-            SQLTask:DtsVariableName="User::RunId"
-            SQLTask:ParameterDirection="Input"
-            SQLTask:DataType="129"
-            SQLTask:ParameterSize="-1" />
-          <SQLTask:ParameterBinding
-            SQLTask:ParameterName="1"
-            SQLTask:DtsVariableName="User::RunId"
-            SQLTask:ParameterDirection="Input"
-            SQLTask:DataType="129"
-            SQLTask:ParameterSize="-1" />
-        </SQLTask:SqlTaskData>
+          SQLTask:SqlStatementSource="MERGE dbo.DimGeoOrigin AS T&#xA;USING (&#xA;    SELECT DISTINCT&#xA;        ISNULL(NULLIF(cc,''), 'XX')           AS CountryCode,&#xA;        ISNULL(NULLIF(country,''), 'Unknown') AS Country,&#xA;        locale                                AS Locale,&#xA;        localeabbr                            AS LocaleAbrev,&#xA;        postalcode                            AS PostalCode,&#xA;        latitude                              AS Latitude,&#xA;        longitude                             AS Longitude,&#xA;        DW_row_checksum_geo                   AS DW_row_checksum,&#xA;        DW_run_id                             AS DW_run_id,&#xA;        DW_source_system                      AS DW_source_system&#xA;    FROM dbo.stg_honeypot&#xA;) AS S&#xA;ON T.DW_row_checksum &lt;&gt; S.DW_row_checksum&#xA;AND ISNULL(T.CountryCode,'')        = ISNULL(S.CountryCode,'')&#xA;AND ISNULL(T.Locale,'')             = ISNULL(S.Locale,'')&#xA;AND ISNULL(T.PostalCode,'')         = ISNULL(S.PostalCode,'')&#xA;AND ROUND(ISNULL(T.Latitude,0),4)   = ROUND(ISNULL(S.Latitude,0),4)&#xA;AND ROUND(ISNULL(T.Longitude,0),4)  = ROUND(ISNULL(S.Longitude,0),4)&#xA;WHEN MATCHED THEN&#xA;    UPDATE SET&#xA;        T.Country          = S.Country,&#xA;        T.LocaleAbrev      = S.LocaleAbrev,&#xA;        T.Latitude         = S.Latitude,&#xA;        T.Longitude        = S.Longitude,&#xA;        T.DW_row_checksum  = S.DW_row_checksum,&#xA;        T.DW_run_id        = S.DW_run_id,&#xA;        T.DW_updated_on    = GETDATE(),&#xA;        T.DW_source_system = S.DW_source_system;&#xA;&#xA;MERGE dbo.DimGeoOrigin AS T&#xA;USING (&#xA;    SELECT DISTINCT&#xA;        ISNULL(NULLIF(cc,''), 'XX')           AS CountryCode,&#xA;        ISNULL(NULLIF(country,''), 'Unknown') AS Country,&#xA;        locale                                AS Locale,&#xA;        localeabbr                            AS LocaleAbrev,&#xA;        postalcode                            AS PostalCode,&#xA;        latitude                              AS Latitude,&#xA;        longitude                             AS Longitude,&#xA;        DW_row_checksum_geo                   AS DW_row_checksum,&#xA;        DW_run_id                             AS DW_run_id,&#xA;        DW_source_system                      AS DW_source_system&#xA;    FROM dbo.stg_honeypot&#xA;) AS S&#xA;ON ISNULL(T.CountryCode,'')        = ISNULL(S.CountryCode,'')&#xA;AND ISNULL(T.Locale,'')            = ISNULL(S.Locale,'')&#xA;AND ISNULL(T.PostalCode,'')        = ISNULL(S.PostalCode,'')&#xA;AND ROUND(ISNULL(T.Latitude,0),4)  = ROUND(ISNULL(S.Latitude,0),4)&#xA;AND ROUND(ISNULL(T.Longitude,0),4) = ROUND(ISNULL(S.Longitude,0),4)&#xA;WHEN NOT MATCHED THEN&#xA;    INSERT (CountryCode, Country, Locale, LocaleAbrev, PostalCode, Latitude, Longitude,&#xA;            DW_row_checksum, DW_run_id, DW_updated_on, DW_source_system)&#xA;    VALUES (S.CountryCode, S.Country, S.Locale, S.LocaleAbrev, S.PostalCode,&#xA;            S.Latitude, S.Longitude,&#xA;            S.DW_row_checksum, S.DW_run_id, GETDATE(), S.DW_source_system);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -5552,25 +5513,12 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       DTS:LocaleID="-1"
       DTS:ObjectName="Merge DimHost"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="4">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{E263DB70-F6A4-4BB5-BF87-A86BC3BE1E1A}"
-          SQLTask:SqlStatementSource="MERGE dbo.DimHost AS target&#xA;USING (&#xA;    SELECT DISTINCT&#xA;        host AS HostName,&#xA;        CASE&#xA;            WHEN CHARINDEX('-', host) &gt; 0&#xA;            THEN SUBSTRING(host, CHARINDEX('-', host) + 1, LEN(host))&#xA;            ELSE NULL&#xA;        END AS Region,&#xA;        DW_row_checksum_host AS src_checksum&#xA;    FROM dbo.stg_honeypot&#xA;    WHERE host IS NOT NULL&#xA;) AS source&#xA;ON target.HostName = source.HostName&#xA;WHEN NOT MATCHED THEN&#xA;    INSERT (HostName, Region, DW_row_checksum, DW_run_id, DW_updated_on, DW_source_system)&#xA;    VALUES (source.HostName, source.Region, source.src_checksum, ?, GETDATE(), 'Honeypot Logs')&#xA;WHEN MATCHED AND target.DW_row_checksum &lt;&gt; source.src_checksum THEN&#xA;    UPDATE SET&#xA;        target.Region           = source.Region,&#xA;        target.DW_row_checksum  = source.src_checksum,&#xA;        target.DW_run_id        = ?,&#xA;        target.DW_updated_on    = GETDATE(),&#xA;        target.DW_source_system = 'Honeypot Logs';" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
-          <SQLTask:ParameterBinding
-            SQLTask:ParameterName="0"
-            SQLTask:DtsVariableName="User::RunId"
-            SQLTask:ParameterDirection="Input"
-            SQLTask:DataType="129"
-            SQLTask:ParameterSize="-1" />
-          <SQLTask:ParameterBinding
-            SQLTask:ParameterName="1"
-            SQLTask:DtsVariableName="User::RunId"
-            SQLTask:ParameterDirection="Input"
-            SQLTask:DataType="129"
-            SQLTask:ParameterSize="-1" />
-        </SQLTask:SqlTaskData>
+          SQLTask:SqlStatementSource="MERGE dbo.DimHost AS T&#xA;USING (&#xA;    SELECT DISTINCT&#xA;        host AS HostName,&#xA;        CASE&#xA;            WHEN CHARINDEX('-', host) &gt; 0&#xA;            THEN SUBSTRING(host, CHARINDEX('-', host) + 1, LEN(host))&#xA;            ELSE NULL&#xA;        END                  AS Region,&#xA;        DW_row_checksum_host AS DW_row_checksum,&#xA;        DW_run_id            AS DW_run_id,&#xA;        DW_source_system     AS DW_source_system&#xA;    FROM dbo.stg_honeypot&#xA;    WHERE host IS NOT NULL&#xA;) AS S&#xA;ON T.DW_row_checksum &lt;&gt; S.DW_row_checksum&#xA;AND T.HostName = S.HostName&#xA;WHEN MATCHED THEN&#xA;    UPDATE SET&#xA;        T.HostName         = S.HostName,&#xA;        T.Region           = S.Region,&#xA;        T.DW_row_checksum  = S.DW_row_checksum,&#xA;        T.DW_run_id        = S.DW_run_id,&#xA;        T.DW_updated_on    = GETDATE(),&#xA;        T.DW_source_system = S.DW_source_system;&#xA;&#xA;MERGE dbo.DimHost AS T&#xA;USING (&#xA;    SELECT DISTINCT&#xA;        host AS HostName,&#xA;        CASE&#xA;            WHEN CHARINDEX('-', host) &gt; 0&#xA;            THEN SUBSTRING(host, CHARINDEX('-', host) + 1, LEN(host))&#xA;            ELSE NULL&#xA;        END                  AS Region,&#xA;        DW_row_checksum_host AS DW_row_checksum,&#xA;        DW_run_id            AS DW_run_id,&#xA;        DW_source_system     AS DW_source_system&#xA;    FROM dbo.stg_honeypot&#xA;    WHERE host IS NOT NULL&#xA;) AS S&#xA;ON T.HostName = S.HostName&#xA;WHEN NOT MATCHED THEN&#xA;    INSERT (HostName, Region, DW_row_checksum, DW_run_id, DW_updated_on, DW_source_system)&#xA;    VALUES (S.HostName, S.Region, S.DW_row_checksum, S.DW_run_id, GETDATE(), S.DW_source_system);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -5582,25 +5530,12 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       DTS:LocaleID="-1"
       DTS:ObjectName="Merge DimProtocol"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="2">
+      DTS:ThreadHint="3">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{E263DB70-F6A4-4BB5-BF87-A86BC3BE1E1A}"
-          SQLTask:SqlStatementSource="MERGE dbo.DimProtocol AS target&#xA;USING (&#xA;    SELECT DISTINCT&#xA;        proto AS ProtocolName,&#xA;        DW_row_checksum_proto AS src_checksum&#xA;    FROM dbo.stg_honeypot&#xA;    WHERE proto IS NOT NULL&#xA;) AS source&#xA;ON target.ProtocolName = source.ProtocolName&#xA;WHEN NOT MATCHED THEN&#xA;    INSERT (ProtocolName, DW_row_checksum, DW_run_id, DW_updated_on, DW_source_system)&#xA;    VALUES (source.ProtocolName, source.src_checksum, ?, GETDATE(), 'Honeypot Logs')&#xA;WHEN MATCHED AND target.DW_row_checksum &lt;&gt; source.src_checksum THEN&#xA;    UPDATE SET&#xA;        target.DW_row_checksum  = source.src_checksum,&#xA;        target.DW_run_id        = ?,&#xA;        target.DW_updated_on    = GETDATE(),&#xA;        target.DW_source_system = 'Honeypot Logs';" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
-          <SQLTask:ParameterBinding
-            SQLTask:ParameterName="0"
-            SQLTask:DtsVariableName="User::RunId"
-            SQLTask:ParameterDirection="Input"
-            SQLTask:DataType="129"
-            SQLTask:ParameterSize="-1" />
-          <SQLTask:ParameterBinding
-            SQLTask:ParameterName="1"
-            SQLTask:DtsVariableName="User::RunId"
-            SQLTask:ParameterDirection="Input"
-            SQLTask:DataType="129"
-            SQLTask:ParameterSize="-1" />
-        </SQLTask:SqlTaskData>
+          SQLTask:SqlStatementSource="MERGE dbo.DimProtocol AS T&#xA;USING (&#xA;    SELECT DISTINCT&#xA;        proto                 AS ProtocolName,&#xA;        DW_row_checksum_proto AS DW_row_checksum,&#xA;        DW_run_id             AS DW_run_id,&#xA;        DW_source_system      AS DW_source_system&#xA;    FROM dbo.stg_honeypot&#xA;    WHERE proto IS NOT NULL&#xA;) AS S&#xA;ON T.DW_row_checksum &lt;&gt; S.DW_row_checksum&#xA;AND T.ProtocolName = S.ProtocolName&#xA;WHEN MATCHED THEN&#xA;    UPDATE SET&#xA;        T.ProtocolName     = S.ProtocolName,&#xA;        T.DW_row_checksum  = S.DW_row_checksum,&#xA;        T.DW_run_id        = S.DW_run_id,&#xA;        T.DW_updated_on    = GETDATE(),&#xA;        T.DW_source_system = S.DW_source_system;&#xA;&#xA;MERGE dbo.DimProtocol AS T&#xA;USING (&#xA;    SELECT DISTINCT&#xA;        proto                 AS ProtocolName,&#xA;        DW_row_checksum_proto AS DW_row_checksum,&#xA;        DW_run_id             AS DW_run_id,&#xA;        DW_source_system      AS DW_source_system&#xA;    FROM dbo.stg_honeypot&#xA;    WHERE proto IS NOT NULL&#xA;) AS S&#xA;ON T.ProtocolName = S.ProtocolName&#xA;WHEN NOT MATCHED THEN&#xA;    INSERT (ProtocolName, DW_row_checksum, DW_run_id, DW_updated_on, DW_source_system)&#xA;    VALUES (S.ProtocolName, S.DW_row_checksum, S.DW_run_id, GETDATE(), S.DW_source_system);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -8697,7 +8632,7 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
       DTS:LocaleID="-1"
       DTS:ObjectName="Truncate Geolite ASN Table"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -8714,7 +8649,7 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
       DTS:LocaleID="-1"
       DTS:ObjectName="Truncate Honeypot Staging Table"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -8922,79 +8857,79 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
       <GraphLayout
         Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="187,43"
+          Size="186.666666666667,42.6666666666667"
           Id="Package\Add Failed Row Count"
           TopLeft="462.347317575137,1037.95307014116" />
         <NodeLayout
-          Size="197,43"
+          Size="197.333333333334,42.6666666666667"
           Id="Package\Add Success Row Count"
           TopLeft="455.941067861518,970.347806956968" />
         <NodeLayout
-          Size="177,43"
+          Size="177.333333333334,42.6666666666667"
           Id="Package\Calculate IP Ranges"
           TopLeft="452.805538264,448.05395539129" />
         <NodeLayout
-          Size="179,42"
+          Size="178.666666666667,42"
           Id="Package\Finish Audit Process"
           TopLeft="463.284817533227,1112.33026310483" />
         <NodeLayout
-          Size="159,43"
+          Size="158.666666666667,42.6666666666667"
           Id="Package\Generate Run Id"
           TopLeft="433.305544410729,9.684210090591" />
         <NodeLayout
-          Size="197,43"
+          Size="197.333333333334,42.6666666666667"
           Id="Package\Import Geolite ASN Data"
           TopLeft="734.430530859986,335.929821879442" />
         <NodeLayout
-          Size="216,43"
+          Size="216,42.6666666666667"
           Id="Package\Import Honeypot Attack Data"
           TopLeft="403.930544159272,336.473680439253" />
         <NodeLayout
-          Size="147,43"
+          Size="146.666666666667,42.6666666666667"
           Id="Package\Insert Indexes"
           TopLeft="461.836787502645,544.907888995417" />
         <NodeLayout
-          Size="153,43"
+          Size="153.333333333334,42.6666666666667"
           Id="Package\Merge DimASN"
           TopLeft="880.209784672929,662.571784518209" />
         <NodeLayout
-          Size="155,43"
+          Size="154.666666666667,42.6666666666667"
           Id="Package\Merge DimDate"
-          TopLeft="482.99998100102,661.84843663785" />
+          TopLeft="481.749981056899,662.532647156653" />
         <NodeLayout
-          Size="180,43"
+          Size="180,42.6666666666667"
           Id="Package\Merge DimGeoOrigin"
           TopLeft="663.456322140342,658.264476777452" />
         <NodeLayout
-          Size="153,43"
+          Size="153.333333333334,42.6666666666667"
           Id="Package\Merge DimHost"
           TopLeft="294.805544969523,657.828455481405" />
         <NodeLayout
-          Size="171,43"
+          Size="170.666666666667,42.6666666666667"
           Id="Package\Merge DimProtocol"
           TopLeft="101.055553630822,656.366467803353" />
         <NodeLayout
-          Size="175,43"
+          Size="174.666666666667,42.6666666666667"
           Id="Package\Populate Fact Table"
           TopLeft="463.190572064488,872.723676406921" />
         <NodeLayout
-          Size="203,43"
+          Size="202.666666666667,42.6666666666667"
           Id="Package\Populate IP Lookup Table"
           TopLeft="449.249982509763,769.350874901671" />
         <NodeLayout
-          Size="171,43"
+          Size="170.666666666667,42.6666666666667"
           Id="Package\Start Audit Process"
           TopLeft="427.430536447921,110.842104046134" />
         <NodeLayout
-          Size="175,43"
+          Size="174.666666666667,42.6666666666667"
           Id="Package\Truncate Fact Table"
           TopLeft="97.999967589976,220.710524869634" />
         <NodeLayout
-          Size="213,43"
+          Size="213.333333333334,42.6666666666667"
           Id="Package\Truncate Geolite ASN Table"
           TopLeft="725.055531949633,216.684208092267" />
         <NodeLayout
-          Size="239,43"
+          Size="238.666666666667,42.6666666666667"
           Id="Package\Truncate Honeypot Staging Table"
           TopLeft="397.4305451651,216.31578705466" />
         <EdgeLayout
@@ -9081,26 +9016,26 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="25.163193498375,74.2738809757664"
+              EndConnector="23.9131935542545,74.9580914945695"
               Start="0,0"
-              End="25.163193498375,66.7738809757664">
+              End="23.9131935542545,67.4580914945695">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,33.1369404878832" />
+                    End="0,33.4790457472848" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,33.1369404878832"
-                    Point2="0,37.1369404878832"
-                    Point3="4,37.1369404878832" />
+                    Point1="0,33.4790457472848"
+                    Point2="0,37.4790457472848"
+                    Point3="4,37.4790457472848" />
                   <mssgle:LineSegment
-                    End="21.163193498375,37.1369404878832" />
+                    End="19.9131935542545,37.4790457472848" />
                   <mssgle:CubicBezierSegment
-                    Point1="21.163193498375,37.1369404878832"
-                    Point2="25.163193498375,37.1369404878832"
-                    Point3="25.163193498375,41.1369404878832" />
+                    Point1="19.9131935542545,37.4790457472848"
+                    Point2="23.9131935542545,37.4790457472848"
+                    Point3="23.9131935542545,41.4790457472848" />
                   <mssgle:LineSegment
-                    End="25.163193498375,66.7738809757664" />
+                    End="23.9131935542545,67.4580914945695" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -9247,30 +9182,30 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 16]"
-          TopLeft="560.333314334353,704.515103304517">
+          TopLeft="559.083314390233,705.19931382332">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-9.74999849125697,64.8357715971543"
+              EndConnector="-8.49999854713644,64.1515610783512"
               Start="0,0"
-              End="-9.74999849125697,57.3357715971543">
+              End="-8.49999854713644,56.6515610783512">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,28.4178857985772" />
+                    End="0,28.0757805391756" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,28.4178857985772"
-                    Point2="0,32.4178857985772"
-                    Point3="-4,32.4178857985772" />
+                    Point1="0,28.0757805391756"
+                    Point2="0,32.0757805391756"
+                    Point3="-4,32.0757805391756" />
                   <mssgle:LineSegment
-                    End="-5.74999849125697,32.4178857985772" />
+                    End="-4.49999854713644,32.0757805391756" />
                   <mssgle:CubicBezierSegment
-                    Point1="-5.74999849125697,32.4178857985772"
-                    Point2="-9.74999849125697,32.4178857985772"
-                    Point3="-9.74999849125697,36.4178857985772" />
+                    Point1="-4.49999854713644,32.0757805391756"
+                    Point2="-8.49999854713644,32.0757805391756"
+                    Point3="-8.49999854713644,36.0757805391756" />
                   <mssgle:LineSegment
-                    End="-9.74999849125697,57.3357715971543" />
+                    End="-8.49999854713644,56.6515610783512" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -9758,7 +9693,9 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9780,7 +9717,9 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9802,7 +9741,9 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9860,7 +9801,9 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9882,7 +9825,9 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9904,7 +9849,9 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9965,19 +9912,19 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="176,43"
+          Size="176,42.6666666666667"
           Id="Package\Import Honeypot Attack Data\Success Row Count"
           TopLeft="234.660705851923,428.982452579428" />
         <NodeLayout
-          Size="164,43"
+          Size="164,42.6666666666667"
           Id="Package\Import Honeypot Attack Data\Failed Row Count"
           TopLeft="665.624970244245,194.999997858939" />
         <NodeLayout
-          Size="183,43"
+          Size="182.666666666667,42.6666666666667"
           Id="Package\Import Honeypot Attack Data\Validate Missing Data"
           TopLeft="209.999990612269,190.824559623047" />
         <NodeLayout
-          Size="177,42"
+          Size="177.333333333334,42"
           Id="Package\Import Honeypot Attack Data\OLE DB Destination"
           TopLeft="241.535705544587,501.438591878555" />
         <NodeLayout
@@ -9985,19 +9932,19 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
           Id="Package\Import Honeypot Attack Data\Flat File Destination"
           TopLeft="820.166642104587,291.499991282821" />
         <NodeLayout
-          Size="123,43"
+          Size="122.666666666667,42.6666666666667"
           Id="Package\Import Honeypot Attack Data\Union All"
           TopLeft="483.74997837469,109.473683008527" />
         <NodeLayout
-          Size="155,46"
+          Size="154.666666666667,46"
           Id="Package\Import Honeypot Attack Data\Flat File Source"
           TopLeft="224.999989941717,18.4736840076892" />
         <NodeLayout
-          Size="149,43"
+          Size="149.333333333334,42.6666666666667"
           Id="Package\Import Honeypot Attack Data\Audit Columns"
           TopLeft="227.499989829958,110.842104046133" />
         <NodeLayout
-          Size="156,43"
+          Size="156,42.6666666666667"
           Id="Package\Import Honeypot Attack Data\Derived Column"
           TopLeft="249.874989857897,312.684207664055" />
         <EdgeLayout
@@ -10031,7 +9978,9 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10053,7 +10002,9 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10111,7 +10062,9 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10169,7 +10122,9 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10191,7 +10146,9 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10285,7 +10242,9 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -10310,251 +10269,330 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="176,43"
+          Size="NaN,NaN"
           Id="Package\Populate Fact Table\Success Row Count"
-          TopLeft="840.25959457672,306.635619252215" />
+          TopLeft="NaN,NaN" />
         <NodeLayout
-          Size="135,43"
+          Size="NaN,NaN"
           Id="Package\Populate Fact Table\DimHost"
-          TopLeft="292.692299118409,254.538454042031" />
+          TopLeft="NaN,NaN" />
         <NodeLayout
-          Size="164,42.6666666666667"
+          Size="NaN,NaN"
           Id="Package\Populate Fact Table\Failed Row Count"
-          TopLeft="736.384593438643,44.8461525096344" />
+          TopLeft="NaN,NaN" />
         <NodeLayout
-          Size="173,43"
+          Size="NaN,NaN"
           Id="Package\Populate Fact Table\Flat File Destination"
-          TopLeft="1016.99996969104,49.9999985098839" />
+          TopLeft="NaN,NaN" />
         <NodeLayout
-          Size="155,43"
+          Size="NaN,NaN"
           Id="Package\Populate Fact Table\OLE DB Source"
-          TopLeft="294.153837625797,29.9230759716951" />
+          TopLeft="NaN,NaN" />
         <NodeLayout
-          Size="121.333333333334,42.6666666666667"
+          Size="NaN,NaN"
           Id="Package\Populate Fact Table\DimDate"
-          TopLeft="313.615375745755,118.846149171774" />
+          TopLeft="NaN,NaN" />
         <NodeLayout
-          Size="122.666666666667,42.6666666666667"
+          Size="NaN,NaN"
           Id="Package\Populate Fact Table\Union All"
-          TopLeft="648.499974854291,252.210523941841" />
+          TopLeft="NaN,NaN" />
         <NodeLayout
-          Size="158,42.6666666666667"
+          Size="NaN,NaN"
           Id="Package\Populate Fact Table\DimProtocol"
-          TopLeft="304.923068372103,379.999990165234" />
+          TopLeft="NaN,NaN" />
         <NodeLayout
-          Size="175,43"
+          Size="NaN,NaN"
           Id="Package\Populate Fact Table\OLE DB Destination"
-          TopLeft="870.238072194515,549.776929588455" />
+          TopLeft="NaN,NaN" />
         <NodeLayout
-          Size="127,43"
+          Size="NaN,NaN"
           Id="Package\Populate Fact Table\DimASN"
-          TopLeft="695.624976502732,550.859644758046" />
+          TopLeft="NaN,NaN" />
         <NodeLayout
-          Size="148,43"
+          Size="NaN,NaN"
           Id="Package\Populate Fact Table\DimGeoOrigin"
-          TopLeft="334.923068670126,553.076910468249" />
-          Size="148,42.6666666666667"
-          Id="Package\Populate Fact Table\DimGeoOrigin"
-          TopLeft="334.923068670126,553.076910468249" /&gt;
+          TopLeft="NaN,NaN" />
         <EdgeLayout
           Id="Package\Populate Fact Table.Paths[Union All Output 1]"
-          TopLeft="729.166641520958,252.210523941841"><EdgeLayout.Curve><mssgle:Curve
+          TopLeft="NaN,NaN">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="89.2179519176854,-164.364371432207"
+              EndConnector="{assembly:Null}"
               Start="0,0"
-              End="89.2179519176854,-156.864371432207"><mssgle:Curve.Segments><mssgle:SegmentCollection
-                  Capacity="5"><mssgle:LineSegment
-                    End="0,-63.0121193319109" /><mssgle:CubicBezierSegment
-                    Point1="0,-63.0121193319109"
-                    Point2="0,-67.0121193319109"
-                    Point3="4,-67.0121193319109" /><mssgle:LineSegment
-                    End="85.2179519176854,-67.0121193319109" /><mssgle:CubicBezierSegment
-                    Point1="85.2179519176854,-67.0121193319109"
-                    Point2="89.2179519176854,-67.0121193319109"
-                    Point3="89.2179519176854,-71.0121193319109" /><mssgle:LineSegment
-                    End="89.2179519176854,-156.864371432207" /></mssgle:SegmentCollection></mssgle:Curve.Segments></mssgle:Curve></EdgeLayout.Curve><EdgeLayout.Labels><mssgm:EdgeLabel
+              End="0,0">
+              <mssgle:Curve.Segments>
+                <assembly:Null />
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
               BoundingBox="0,0,0,0"
-              RelativePosition="Any" /></EdgeLayout.Labels></EdgeLayout><EdgeLayout
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Populate Fact Table.Paths[Row Count Output 11]"
-          TopLeft="900.384593438643,68.7564088430925"><EdgeLayout.Curve><mssgle:Curve
+          TopLeft="NaN,NaN">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="116.615376252396,0"
+              EndConnector="{assembly:Null}"
               Start="0,0"
-              End="109.115376252396,0"><mssgle:Curve.Segments><mssgle:SegmentCollection
-                  Capacity="5"><mssgle:LineSegment
-                    End="109.115376252396,0" /></mssgle:SegmentCollection></mssgle:Curve.Segments></mssgle:Curve></EdgeLayout.Curve><EdgeLayout.Labels><mssgm:EdgeLabel
+              End="0,0">
+              <mssgle:Curve.Segments>
+                <assembly:Null />
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
               BoundingBox="0,0,0,0"
-              RelativePosition="Any" /></EdgeLayout.Labels></EdgeLayout><EdgeLayout
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Populate Fact Table.Paths[Row Count Output 1]"
-          TopLeft="956.998833385617,349.635619252215"><EdgeLayout.Curve><mssgle:Curve
+          TopLeft="NaN,NaN">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,200.14131033624"
+              EndConnector="{assembly:Null}"
               Start="0,0"
-              End="0,192.64131033624"><mssgle:Curve.Segments><mssgle:SegmentCollection
-                  Capacity="5"><mssgle:LineSegment
-                    End="0,192.64131033624" /></mssgle:SegmentCollection></mssgle:Curve.Segments></mssgle:Curve></EdgeLayout.Curve><EdgeLayout.Labels><mssgm:EdgeLabel
+              End="0,0">
+              <mssgle:Curve.Segments>
+                <assembly:Null />
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
               BoundingBox="0,0,0,0"
-              RelativePosition="Any" /></EdgeLayout.Labels></EdgeLayout><EdgeLayout
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Populate Fact Table.Paths[OLE DB Source Output]"
-          TopLeft="372.884606685776,72.9230759716951"><EdgeLayout.Curve><mssgle:Curve
+          TopLeft="NaN,NaN">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,45.9230732000789"
+              EndConnector="{assembly:Null}"
               Start="0,0"
-              End="0,38.4230732000789"><mssgle:Curve.Segments><mssgle:SegmentCollection
-                  Capacity="5"><mssgle:LineSegment
-                    End="0,38.4230732000789" /></mssgle:SegmentCollection></mssgle:Curve.Segments></mssgle:Curve></EdgeLayout.Curve><EdgeLayout.Labels><mssgm:EdgeLabel
+              End="0,0">
+              <mssgle:Curve.Segments>
+                <assembly:Null />
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
               BoundingBox="0,0,0,0"
-              RelativePosition="Any" /></EdgeLayout.Labels></EdgeLayout><EdgeLayout
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Populate Fact Table.Paths[Lookup Match Output4]"
-          TopLeft="778.958309836065,550.859644758046"><EdgeLayout.Curve><mssgle:Curve
+          TopLeft="NaN,NaN">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="121.301284740655,-201.224025505831"
+              EndConnector="{assembly:Null}"
               Start="0,0"
-              End="121.301284740655,-193.724025505831"><mssgle:Curve.Segments><mssgle:SegmentCollection
-                  Capacity="5"><mssgle:LineSegment
-                    End="0,-97.0414916818198" /><mssgle:CubicBezierSegment
-                    Point1="0,-97.0414916818198"
-                    Point2="0,-101.04149168182"
-                    Point3="4,-101.04149168182" /><mssgle:LineSegment
-                    End="117.301284740655,-101.04149168182" /><mssgle:CubicBezierSegment
-                    Point1="117.301284740655,-101.04149168182"
-                    Point2="121.301284740655,-101.04149168182"
-                    Point3="121.301284740655,-105.04149168182" /><mssgle:LineSegment
-                    End="121.301284740655,-193.724025505831" /></mssgle:SegmentCollection></mssgle:Curve.Segments></mssgle:Curve></EdgeLayout.Curve><EdgeLayout.Labels><mssgm:EdgeLabel
-              BoundingBox="12.4592556515773,-96.0414916818198,96.3827734375,11.609375"
-              RelativePosition="Any" /></EdgeLayout.Labels></EdgeLayout><EdgeLayout
+              End="0,0">
+              <mssgle:Curve.Segments>
+                <assembly:Null />
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Populate Fact Table.Paths[Lookup Match Output3]"
-          TopLeft="482.923068670126,573.468277613148"><EdgeLayout.Curve><mssgle:Curve
+          TopLeft="NaN,NaN">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="212.701907832606,0"
+              EndConnector="{assembly:Null}"
               Start="0,0"
-              End="205.201907832606,0"><mssgle:Curve.Segments><mssgle:SegmentCollection
-                  Capacity="5"><mssgle:LineSegment
-                    End="205.201907832606,0" /></mssgle:SegmentCollection></mssgle:Curve.Segments></mssgle:Curve></EdgeLayout.Curve><EdgeLayout.Labels><mssgm:EdgeLabel
-              BoundingBox="54.409567197553,5,96.3827734375,11.609375"
-              RelativePosition="Any" /></EdgeLayout.Labels></EdgeLayout><EdgeLayout
+              End="0,0">
+              <mssgle:Curve.Segments>
+                <assembly:Null />
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Populate Fact Table.Paths[Lookup Match Output2]"
-          TopLeft="384.756401854448,422.999990165234"><EdgeLayout.Curve><mssgle:Curve
+          TopLeft="NaN,NaN">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,130.076920303015"
+              EndConnector="{assembly:Null}"
               Start="0,0"
-              End="0,122.576920303015"><mssgle:Curve.Segments><mssgle:SegmentCollection
-                  Capacity="5"><mssgle:LineSegment
-                    End="0,122.576920303015" /></mssgle:SegmentCollection></mssgle:Curve.Segments></mssgle:Curve></EdgeLayout.Curve><EdgeLayout.Labels><mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,55.4837726515075,96.3827734375,11.609375"
-              RelativePosition="Any" /></EdgeLayout.Labels></EdgeLayout><EdgeLayout
+              End="0,0">
+              <mssgle:Curve.Segments>
+                <assembly:Null />
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Populate Fact Table.Paths[Lookup Match Output1]"
-          TopLeft="359.557683745256,297.538454042031"><EdgeLayout.Curve><mssgle:Curve
+          TopLeft="NaN,NaN">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,82.461536123203"
+              EndConnector="{assembly:Null}"
               Start="0,0"
-              End="0,74.961536123203"><mssgle:Curve.Segments><mssgle:SegmentCollection
-                  Capacity="5"><mssgle:LineSegment
-                    End="0,74.961536123203" /></mssgle:SegmentCollection></mssgle:Curve.Segments></mssgle:Curve></EdgeLayout.Curve><EdgeLayout.Labels><mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,31.6760805616015,96.3827734375,11.609375"
-              RelativePosition="Any" /></EdgeLayout.Labels></EdgeLayout><EdgeLayout
+              End="0,0">
+              <mssgle:Curve.Segments>
+                <assembly:Null />
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Populate Fact Table.Paths[Lookup Match Output]"
-          TopLeft="357.737170765415,161.846149171774"><EdgeLayout.Curve><mssgle:Curve
+          TopLeft="NaN,NaN">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,92.692304870257"
+              EndConnector="{assembly:Null}"
               Start="0,0"
-              End="0,85.192304870257"><mssgle:Curve.Segments><mssgle:SegmentCollection
-                  Capacity="5"><mssgle:LineSegment
-                    End="0,85.192304870257" /></mssgle:SegmentCollection></mssgle:Curve.Segments></mssgle:Curve></EdgeLayout.Curve><EdgeLayout.Labels><mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,36.7914649351285,96.3827734375,11.609375"
-              RelativePosition="Any" /></EdgeLayout.Labels></EdgeLayout><EdgeLayout
+              End="0,0">
+              <mssgle:Curve.Segments>
+                <assembly:Null />
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Populate Fact Table.Paths[Lookup Error Output4]"
-          TopLeft="739.020809011845,550.859644758046"><EdgeLayout.Curve><mssgle:Curve
+          TopLeft="NaN,NaN">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,-255.649120816205"
+              EndConnector="{assembly:Null}"
               Start="0,0"
-              End="0,-248.149120816205"><mssgle:Curve.Segments><mssgle:SegmentCollection
-                  Capacity="5"><mssgle:LineSegment
-                    End="0,-248.149120816205" /></mssgle:SegmentCollection></mssgle:Curve.Segments></mssgle:Curve></EdgeLayout.Curve><EdgeLayout.Labels><mssgm:EdgeLabel
-              BoundingBox="-45.86638671875,-129.879247908103,91.7327734375,11.609375"
-              RelativePosition="Any" /></EdgeLayout.Labels></EdgeLayout><EdgeLayout
+              End="0,0">
+              <mssgle:Curve.Segments>
+                <assembly:Null />
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Populate Fact Table.Paths[Lookup Error Output3]"
-          TopLeft="432.256402003459,553.076910468249"><EdgeLayout.Curve><mssgle:Curve
+          TopLeft="NaN,NaN">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="277.743572850832,-257.866386526408"
+              EndConnector="{assembly:Null}"
               Start="0,0"
-              End="277.743572850832,-250.366386526408"><mssgle:Curve.Segments><mssgle:SegmentCollection
-                  Capacity="5"><mssgle:LineSegment
-                    End="0,-100.801312171161" /><mssgle:CubicBezierSegment
-                    Point1="0,-100.801312171161"
-                    Point2="0,-104.801312171161"
-                    Point3="4,-104.801312171161" /><mssgle:LineSegment
-                    End="273.743572850832,-104.801312171161" /><mssgle:CubicBezierSegment
-                    Point1="273.743572850832,-104.801312171161"
-                    Point2="277.743572850832,-104.801312171161"
-                    Point3="277.743572850832,-108.801312171161" /><mssgle:LineSegment
-                    End="277.743572850832,-250.366386526408" /></mssgle:SegmentCollection></mssgle:Curve.Segments></mssgle:Curve></EdgeLayout.Curve><EdgeLayout.Labels><mssgm:EdgeLabel
-              BoundingBox="93.0053997066659,-99.8013121711605,91.7327734375,11.609375"
-              RelativePosition="Any" /></EdgeLayout.Labels></EdgeLayout><EdgeLayout
+              End="0,0">
+              <mssgle:Curve.Segments>
+                <assembly:Null />
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Populate Fact Table.Paths[Lookup Error Output2]"
-          TopLeft="408.923068372103,379.999990165234"><EdgeLayout.Curve><mssgle:Curve
+          TopLeft="NaN,NaN">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="272.326906482188,-84.789466223393"
+              EndConnector="{assembly:Null}"
               Start="0,0"
-              End="272.326906482188,-77.289466223393"><mssgle:Curve.Segments><mssgle:SegmentCollection
-                  Capacity="5"><mssgle:LineSegment
-                    End="0,-43.6597668223058" /><mssgle:CubicBezierSegment
-                    Point1="0,-43.6597668223058"
-                    Point2="0,-47.6597668223058"
-                    Point3="4,-47.6597668223058" /><mssgle:LineSegment
-                    End="268.326906482188,-47.6597668223058" /><mssgle:CubicBezierSegment
-                    Point1="268.326906482188,-47.6597668223058"
-                    Point2="272.326906482188,-47.6597668223058"
-                    Point3="272.326906482188,-51.6597668223058" /><mssgle:LineSegment
-                    End="272.326906482188,-77.289466223393" /></mssgle:SegmentCollection></mssgle:Curve.Segments></mssgle:Curve></EdgeLayout.Curve><EdgeLayout.Labels><mssgm:EdgeLabel
-              BoundingBox="90.297066522344,-42.6597668223058,91.7327734375,11.609375"
-              RelativePosition="Any" /></EdgeLayout.Labels></EdgeLayout><EdgeLayout
+              End="0,0">
+              <mssgle:Curve.Segments>
+                <assembly:Null />
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Populate Fact Table.Paths[Lookup Error Output1]"
-          TopLeft="427.692299118409,274.874488991936"><EdgeLayout.Curve><mssgle:Curve
+          TopLeft="NaN,NaN">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="220.807675735882,0"
+              EndConnector="{assembly:Null}"
               Start="0,0"
-              End="213.307675735882,0"><mssgle:Curve.Segments><mssgle:SegmentCollection
-                  Capacity="5"><mssgle:LineSegment
-                    End="213.307675735882,0" /></mssgle:SegmentCollection></mssgle:Curve.Segments></mssgle:Curve></EdgeLayout.Curve><EdgeLayout.Labels><mssgm:EdgeLabel
-              BoundingBox="60.787451149191,5,91.7327734375,11.609375"
-              RelativePosition="Any" /></EdgeLayout.Labels></EdgeLayout><EdgeLayout
+              End="0,0">
+              <mssgle:Curve.Segments>
+                <assembly:Null />
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Populate Fact Table.Paths[Lookup Error Output]"
-          TopLeft="392.948709079088,161.846149171774"><EdgeLayout.Curve><mssgle:Curve
+          TopLeft="NaN,NaN">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="297.884599108536,90.364374770067"
+              EndConnector="{assembly:Null}"
               Start="0,0"
-              End="297.884599108536,82.864374770067"><mssgle:Curve.Segments><mssgle:SegmentCollection
-                  Capacity="5"><mssgle:LineSegment
-                    End="0,41.1939451593839" /><mssgle:CubicBezierSegment
-                    Point1="0,41.1939451593839"
-                    Point2="0,45.1939451593839"
-                    Point3="4,45.1939451593839" /><mssgle:LineSegment
-                    End="293.884599108536,45.1939451593839" /><mssgle:CubicBezierSegment
-                    Point1="293.884599108536,45.1939451593839"
-                    Point2="297.884599108536,45.1939451593839"
-                    Point3="297.884599108536,49.1939451593839" /><mssgle:LineSegment
-                    End="297.884599108536,82.864374770067" /></mssgle:SegmentCollection></mssgle:Curve.Segments></mssgle:Curve></EdgeLayout.Curve><EdgeLayout.Labels><mssgm:EdgeLabel
-              BoundingBox="103.075912835518,50.1939451593839,91.7327734375,11.609375"
-              RelativePosition="Any" /></EdgeLayout.Labels></EdgeLayout><EdgeLayout
-          Id="Package\Populate Fact Table.Paths[Lookup Error Output]"
-          TopLeft="392.948709079088,161.846149171774"><EdgeLayout.Curve><mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="297.884599108536,90.364374770067"
-              Start="0,0"
-              End="297.884599108536,82.864374770067"><mssgle:Curve.Segments><mssgle:SegmentCollection
-                  Capacity="5"><mssgle:LineSegment
-                    End="0,41.1939451593839" /><mssgle:CubicBezierSegment
-                    Point1="0,41.1939451593839"
-                    Point2="0,45.1939451593839"
-                    Point3="4,45.1939451593839" /><mssgle:LineSegment
-                    End="293.884599108536,45.1939451593839" /><mssgle:CubicBezierSegment
-                    Point1="293.884599108536,45.1939451593839"
-                    Point2="297.884599108536,45.1939451593839"
-                    Point3="297.884599108536,49.1939451593839" /><mssgle:LineSegment
-                    End="297.884599108536,82.864374770067" /></mssgle:SegmentCollection></mssgle:Curve.Segments></mssgle:Curve></EdgeLayout.Curve><EdgeLayout.Labels><mssgm:EdgeLabel
-              BoundingBox="103.075912835518,50.1939451593839,91.7327734375,11.609375"
-              RelativePosition="Any" /></EdgeLayout.Labels></EdgeLayout></GraphLayout>
+              End="0,0">
+              <mssgle:Curve.Segments>
+                <assembly:Null />
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
