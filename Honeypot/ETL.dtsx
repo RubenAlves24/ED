@@ -11,8 +11,8 @@
   DTS:LocaleID="2070"
   DTS:ObjectName="ETL"
   DTS:PackageType="5"
-  DTS:VersionBuild="190"
-  DTS:VersionGUID="{B7D58BA6-6B25-4326-9CA4-D0229B157CAA}">
+  DTS:VersionBuild="191"
+  DTS:VersionGUID="{3BD24EEB-05EE-4C3B-B6EC-FA2BD87D81F0}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -9114,7 +9114,7 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 14]"
-          TopLeft="186.388886964156,699.03313447002">
+          TopLeft="186.388886964155,699.03313447002">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -9522,9 +9522,9 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-302.5590116496,68.7919121412693"
+              EndConnector="-302.559011649601,68.7919121412693"
               Start="0,0"
-              End="-302.5590116496,61.2919121412693">
+              End="-302.559011649601,61.2919121412693">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -9535,13 +9535,13 @@ WHERE (datetime IS NOT NULL) AND (srcstr IS NOT NULL) AND (proto IS NOT NULL) AN
                     Point2="0,18.5677284983072"
                     Point3="-4,18.5677284983072" />
                   <mssgle:LineSegment
-                    End="-298.5590116496,18.5677284983072" />
+                    End="-298.559011649601,18.5677284983072" />
                   <mssgle:CubicBezierSegment
-                    Point1="-298.5590116496,18.5677284983072"
-                    Point2="-302.5590116496,18.5677284983072"
-                    Point3="-302.5590116496,22.5677284983072" />
+                    Point1="-298.559011649601,18.5677284983072"
+                    Point2="-302.559011649601,18.5677284983072"
+                    Point3="-302.559011649601,22.5677284983072" />
                   <mssgle:LineSegment
-                    End="-302.5590116496,61.2919121412693" />
+                    End="-302.559011649601,61.2919121412693" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
