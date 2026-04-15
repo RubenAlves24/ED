@@ -40,6 +40,9 @@ GO
 IF OBJECT_ID('dbo.trg_Insert_stg_geolite_Checksum', 'TR') IS NOT NULL
     DROP TRIGGER dbo.trg_Insert_stg_geolite_Checksum;
 GO
+IF OBJECT_ID('dbo.trg_Insert_stg_factattack_Checksum', 'TR') IS NOT NULL
+    DROP TRIGGER dbo.trg_Insert_stg_factattack_Checksum;
+GO
 IF OBJECT_ID('dbo.trg_Insert_DimDate_Checksum', 'TR') IS NOT NULL
     DROP TRIGGER dbo.trg_Insert_DimDate_Checksum;
 GO
@@ -76,6 +79,7 @@ GO
 -- Staging
 DROP TABLE IF EXISTS dbo.stg_honeypot;
 DROP TABLE IF EXISTS dbo.stg_geolite;
+DROP TABLE IF EXISTS dbo.stg_factattack;
 GO
 
 -- Audit
@@ -162,6 +166,27 @@ CREATE TABLE dbo.stg_asn_lookup (
     src     BIGINT      NOT NULL,
     ASNID   INT         NOT NULL
 );
+GO
+
+-- Staging da fact para carga incremental
+CREATE TABLE dbo.stg_factattack (
+    AttackID            INT             NOT NULL IDENTITY(1,1),
+    DateID              INT             NOT NULL,
+    HostID              INT             NOT NULL,
+    GeoOrigID           INT             NOT NULL,
+    ASNID               INT             NOT NULL,
+    ProtoID             INT             NOT NULL,
+    SrcPort             INT             NULL,
+    DestPort            INT             NULL,
+    SrcIPInt            BIGINT          NULL,
+    SrcIPStr            VARCHAR(45)     NULL,
+    DW_row_checksum     VARCHAR(64)     NULL,
+    DW_run_id           VARCHAR(50)     NULL,
+    DW_updated_on       DATETIME        NULL,
+    DW_source_system    VARCHAR(100)    NULL,
+    CONSTRAINT PK_stg_factattack PRIMARY KEY (AttackID)
+);
+GO
 
 
 
@@ -251,7 +276,7 @@ CREATE TABLE dbo.DimProtocol (
 GO
 
 
--- TABELA DE FACTO (sem checksum, com audit)
+-- TABELA DE FACTO (com checksum e audit)
 
 CREATE TABLE dbo.FactAttack (
     AttackID            INT             NOT NULL IDENTITY(1,1),
@@ -264,6 +289,7 @@ CREATE TABLE dbo.FactAttack (
     DestPort            INT             NULL,
     SrcIPInt            BIGINT          NULL,
     SrcIPStr            VARCHAR(45)     NULL,
+    DW_row_checksum     VARCHAR(64)     NULL,
     -- Audit
     DW_run_id           VARCHAR(50)     NULL,
     DW_updated_on       DATETIME        NULL,
@@ -335,6 +361,33 @@ BEGIN
             )), 2)
     FROM dbo.stg_geolite t
     INNER JOIN inserted i ON t.stg_id = i.stg_id;
+END;
+GO
+
+
+CREATE TRIGGER dbo.trg_Insert_stg_factattack_Checksum
+ON dbo.stg_factattack
+AFTER INSERT
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    UPDATE t
+    SET
+        t.DW_row_checksum = CONVERT(VARCHAR(64),
+            HASHBYTES('MD5', CONCAT(
+                CAST(t.DateID AS VARCHAR(20)),
+                CAST(t.HostID AS VARCHAR(20)),
+                CAST(t.ProtoID AS VARCHAR(20)),
+                CAST(t.SrcIPInt AS VARCHAR(20)),
+                t.SrcIPStr,
+                CAST(t.SrcPort AS VARCHAR(20)),
+                CAST(t.DestPort AS VARCHAR(20)),
+                CAST(t.GeoOrigID AS VARCHAR(20)),
+                CAST(t.ASNID AS VARCHAR(20)),
+            )), 2)
+    FROM dbo.stg_factattack t
+    INNER JOIN inserted i ON t.AttackID = i.AttackID;
 END;
 GO
 
