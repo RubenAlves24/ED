@@ -384,7 +384,7 @@ BEGIN
                 CAST(t.SrcPort AS VARCHAR(20)),
                 CAST(t.DestPort AS VARCHAR(20)),
                 CAST(t.GeoOrigID AS VARCHAR(20)),
-                CAST(t.ASNID AS VARCHAR(20)),
+                CAST(t.ASNID AS VARCHAR(20))
             )), 2)
     FROM dbo.stg_factattack t
     INNER JOIN inserted i ON t.AttackID = i.AttackID;
